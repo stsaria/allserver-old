@@ -43,6 +43,7 @@ def search_servers(host, port = 50384, mode = "000", isprint = True):
                 print(word[0]+f" : {len(pickle.loads(data))}\n")
                 for i in pickle.loads(data):
                     print(word[1]+f":{i[0]} IP:{i[1]} "+word[2]+f":{i[2]} "+word[3]+f":{i[3]} "+word[4]+f":{i[4]}")
+                input()
         servers = pickle.loads(data)
     except:
         if isprint == True:
@@ -108,7 +109,7 @@ def start_server(port = 50385, mode = 0):
             if int(data) == 0:
                 print(lang["Message"]["Client"]["Message"][5])
             else:
-                print(lang["Message"]["Client"]["Message"][1])
+                print(lang["Message"]["Client"]["Message"][9])
         except ConnectionRefusedError:
             print(lang["Message"]["Client"]["Message"][1])
             print(lang["Message"]["Client"]["Message"][7])

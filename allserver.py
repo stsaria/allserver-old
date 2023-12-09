@@ -1,4 +1,4 @@
-import minecraft_server, list_server, client, check, etc, sys
+import minecraft_server, list_server, logging, client, check, etc, sys, os
 
 def main(args : list):
     lang = etc.load_lang()
@@ -6,9 +6,26 @@ def main(args : list):
         if "--help" in args:
             print("\n".join(lang["Message"]["Main"]["HelpMessage"]))
         elif "--start-minecraft-server" in args:
-            minecraft_server.socket_server()
+            stream_handler = logging.StreamHandler()
+            stream_handler.setLevel(logging.INFO)
+            stream_handler.setFormatter(logging.Formatter("%(asctime)s@ %(message)s"))
+            os.makedirs('./log', exist_ok=True)
+
+            file_handler = logging.FileHandler("./log/minecraftserver.log", encoding='utf-8')
+            file_handler.setLevel(logging.INFO)
+            file_handler.setFormatter(
+                logging.Formatter("%(asctime)s %(name)s [%(levelname)s] %(message)s '%(funcName)s'")
+            )
+
+            logging.basicConfig(level=logging.NOTSET, handlers=[stream_handler, file_handler])
+            logger = logging.getLogger(__name__)
+            try:
+                minecraft_server.socket_server()
+            except KeyboardInterrupt:
+                logger.info("STOP!!")
+                return 0
         elif "--start-list-server" in args:
-            list_server.start_server()
+                list_server.start_server()
         elif "--search" in args[1] and len(args[1].split("/")) == 2:
             client.search_servers(args[1].split("/")[1])
     else:

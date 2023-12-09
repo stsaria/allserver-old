@@ -21,8 +21,8 @@ AllServerは、非常に低コスト・低負荷で動くマインクラフト�
 ## 必要環境
 - OS Linux/Windows/OS X
 - Java(Minecraft バージョンに合っている)
-- Python3(最新バージョン推奨)<br>
-  Requests(ライブラリ)
+- Python3(最新バージョン推奨)
+Requests(ライブラリ)
 
 ## インストール方法
 1. pipでライブラリをインストールする。

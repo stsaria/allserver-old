@@ -117,6 +117,13 @@ def handle_client(client_socket, address):
 
 def start_server(host = "0.0.0.0", port = 50384):
     lang = etc.load_lang()
+    if not os.path.isfile("data/listserver.csv"):
+        try:
+            with open("data/listserver.csv", mode="w") as f:
+                f.write("Name,IP,Country,Team,Message,Badcount\n")
+        except:
+            logger.error(f"Error : Cant start server\nFail make file(data/listserver.csv)")
+            return 2
     try:
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server_socket.bind((host, port))

@@ -1,13 +1,21 @@
 {
 	"stable": {
+		"1.20.4": {
+			"client": "https://piston-data.mojang.com/v1/objects/fd19469fed4a4b4c15b2d5133985f0e3e7816a8a/client.jar",
+			"time": "2023-12-07T12:56:20.000Z",
+			"time_formatted": "2023-12-07",
+			"time_year": 2023,
+			"server": "https://piston-data.mojang.com/v1/objects/8dd1a28015f51b1803213892b50b7b4fc76e594d/server.jar",
+			"index": 0,
+			"latest": true
+		},
 		"1.20.3": {
 			"client": "https://piston-data.mojang.com/v1/objects/b178a327a96f2cf1c9f98a45e5588d654a3e4369/client.jar",
 			"time": "2023-12-04T12:10:32.000Z",
 			"time_formatted": "2023-12-04",
 			"time_year": 2023,
 			"server": "https://piston-data.mojang.com/v1/objects/4fb536bfd4a83d61cdbaf684b8d311e66e7d4c49/server.jar",
-			"index": 0,
-			"latest": true
+			"index": 1
 		},
 		"1.20.2": {
 			"client": "https://piston-data.mojang.com/v1/objects/82d1974e75fc984c5ed4b038e764e50958ac61a0/client.jar",
@@ -15,7 +23,7 @@
 			"time_formatted": "2023-09-20",
 			"time_year": 2023,
 			"server": "https://piston-data.mojang.com/v1/objects/5b868151bd02b41319f54c8d4061b8cae84e665c/server.jar",
-			"index": 1
+			"index": 2
 		},
 		"1.20.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/0c3ec587af28e5a785c0b4a7b8a30f9a8f78f838/client.jar",
@@ -23,7 +31,7 @@
 			"time_formatted": "2023-06-12",
 			"time_year": 2023,
 			"server": "https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar",
-			"index": 2
+			"index": 3
 		},
 		"1.20": {
 			"client": "https://piston-data.mojang.com/v1/objects/e575a48efda46cf88111ba05b624ef90c520eef1/client.jar",
@@ -31,7 +39,7 @@
 			"time_formatted": "2023-06-02",
 			"time_year": 2023,
 			"server": "https://piston-data.mojang.com/v1/objects/15c777e2cfe0556eef19aab534b186c0c6f277e1/server.jar",
-			"index": 3
+			"index": 4
 		},
 		"1.19.4": {
 			"client": "https://piston-data.mojang.com/v1/objects/958928a560c9167687bea0cefeb7375da1e552a8/client.jar",
@@ -39,7 +47,7 @@
 			"time_formatted": "2023-03-14",
 			"time_year": 2023,
 			"server": "https://piston-data.mojang.com/v1/objects/8f3112a1049751cc472ec13e397eade5336ca7ae/server.jar",
-			"index": 4
+			"index": 5
 		},
 		"1.19.3": {
 			"client": "https://piston-data.mojang.com/v1/objects/977727ec9ab8b4631e5c12839f064092f17663f8/client.jar",
@@ -47,7 +55,7 @@
 			"time_formatted": "2022-12-07",
 			"time_year": 2022,
 			"server": "https://piston-data.mojang.com/v1/objects/c9df48efed58511cdd0213c56b9013a7b5c9ac1f/server.jar",
-			"index": 5
+			"index": 6
 		},
 		"1.19.2": {
 			"client": "https://piston-data.mojang.com/v1/objects/055b30d860ead928cba3849ba920c88b6950b654/client.jar",
@@ -55,7 +63,7 @@
 			"time_formatted": "2022-08-05",
 			"time_year": 2022,
 			"server": "https://piston-data.mojang.com/v1/objects/f69c284232d7c7580bd89a5a4931c3581eae1378/server.jar",
-			"index": 6
+			"index": 7
 		},
 		"1.19.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/90d438c3e432add8848a9f9f368ce5a52f6bc4a7/client.jar",
@@ -63,7 +71,7 @@
 			"time_formatted": "2022-07-27",
 			"time_year": 2022,
 			"server": "https://piston-data.mojang.com/v1/objects/8399e1211e95faa421c1507b322dbeae86d604df/server.jar",
-			"index": 7
+			"index": 8
 		},
 		"1.19": {
 			"client": "https://piston-data.mojang.com/v1/objects/c0898ec7c6a5a2eaa317770203a1554260699994/client.jar",
@@ -71,7 +79,7 @@
 			"time_formatted": "2022-06-07",
 			"time_year": 2022,
 			"server": "https://piston-data.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar",
-			"index": 8
+			"index": 9
 		},
 		"1.18.2": {
 			"client": "https://piston-data.mojang.com/v1/objects/2e9a3e3107cca00d6bc9c97bf7d149cae163ef21/client.jar",
@@ -79,7 +87,7 @@
 			"time_formatted": "2022-02-28",
 			"time_year": 2022,
 			"server": "https://piston-data.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar",
-			"index": 9
+			"index": 10
 		},
 		"1.18.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/7e46fb47609401970e2818989fa584fd467cd036/client.jar",
@@ -87,7 +95,7 @@
 			"time_formatted": "2021-12-10",
 			"time_year": 2021,
 			"server": "https://piston-data.mojang.com/v1/objects/125e5adf40c659fd3bce3e66e67a16bb49ecc1b9/server.jar",
-			"index": 10
+			"index": 11
 		},
 		"1.18": {
 			"client": "https://piston-data.mojang.com/v1/objects/d49eb6caed53d23927648c97451503442f9e26fd/client.jar",
@@ -95,7 +103,7 @@
 			"time_formatted": "2021-11-30",
 			"time_year": 2021,
 			"server": "https://piston-data.mojang.com/v1/objects/3cf24a8694aca6267883b17d934efacc5e44440d/server.jar",
-			"index": 11
+			"index": 12
 		},
 		"1.17.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/8d9b65467c7913fcf6f5b2e729d44a1e00fde150/client.jar",
@@ -103,7 +111,7 @@
 			"time_formatted": "2021-07-06",
 			"time_year": 2021,
 			"server": "https://piston-data.mojang.com/v1/objects/a16d67e5807f57fc4e550299cf20226194497dc2/server.jar",
-			"index": 12
+			"index": 13
 		},
 		"1.17": {
 			"client": "https://piston-data.mojang.com/v1/objects/1cf89c77ed5e72401b869f66410934804f3d6f52/client.jar",
@@ -111,7 +119,7 @@
 			"time_formatted": "2021-06-08",
 			"time_year": 2021,
 			"server": "https://piston-data.mojang.com/v1/objects/0a269b5f2c5b93b1712d0f5dc43b6182b9ab254e/server.jar",
-			"index": 13
+			"index": 14
 		},
 		"1.16.5": {
 			"client": "https://piston-data.mojang.com/v1/objects/37fd3c903861eeff3bc24b71eed48f828b5269c8/client.jar",
@@ -119,7 +127,7 @@
 			"time_formatted": "2021-01-14",
 			"time_year": 2021,
 			"server": "https://piston-data.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar",
-			"index": 14
+			"index": 15
 		},
 		"1.16.4": {
 			"client": "https://piston-data.mojang.com/v1/objects/1952d94a0784e7abda230aae6a1e8fc0522dba99/client.jar",
@@ -127,7 +135,7 @@
 			"time_formatted": "2020-10-29",
 			"time_year": 2020,
 			"server": "https://piston-data.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar",
-			"index": 15
+			"index": 16
 		},
 		"1.16.3": {
 			"client": "https://piston-data.mojang.com/v1/objects/1321521b2caf934f7fc9665aab7e059a7b2bfcdf/client.jar",
@@ -135,7 +143,7 @@
 			"time_formatted": "2020-09-10",
 			"time_year": 2020,
 			"server": "https://piston-data.mojang.com/v1/objects/f02f4473dbf152c23d7d484952121db0b36698cb/server.jar",
-			"index": 16
+			"index": 17
 		},
 		"1.16.2": {
 			"client": "https://piston-data.mojang.com/v1/objects/653e97a2d1d76f87653f02242d243cdee48a5144/client.jar",
@@ -143,7 +151,7 @@
 			"time_formatted": "2020-08-11",
 			"time_year": 2020,
 			"server": "https://piston-data.mojang.com/v1/objects/c5f6fb23c3876461d46ec380421e42b289789530/server.jar",
-			"index": 17
+			"index": 18
 		},
 		"1.16.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/c9abbe8ee4fa490751ca70635340b7cf00db83ff/client.jar",
@@ -151,7 +159,7 @@
 			"time_formatted": "2020-06-24",
 			"time_year": 2020,
 			"server": "https://piston-data.mojang.com/v1/objects/a412fd69db1f81db3f511c1463fd304675244077/server.jar",
-			"index": 18
+			"index": 19
 		},
 		"1.16": {
 			"client": "https://piston-data.mojang.com/v1/objects/228fdf45541c4c2fe8aec4f20e880cb8fcd46621/client.jar",
@@ -159,7 +167,7 @@
 			"time_formatted": "2020-06-23",
 			"time_year": 2020,
 			"server": "https://piston-data.mojang.com/v1/objects/a0d03225615ba897619220e256a266cb33a44b6b/server.jar",
-			"index": 19
+			"index": 20
 		},
 		"1.15.2": {
 			"client": "https://piston-data.mojang.com/v1/objects/e3f78cd16f9eb9a52307ed96ebec64241cc5b32d/client.jar",
@@ -167,7 +175,7 @@
 			"time_formatted": "2020-01-17",
 			"time_year": 2020,
 			"server": "https://piston-data.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar",
-			"index": 20
+			"index": 21
 		},
 		"1.15.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/8b11614bea9293592a947ea8f4fd72981ea66677/client.jar",
@@ -175,7 +183,7 @@
 			"time_formatted": "2019-12-16",
 			"time_year": 2019,
 			"server": "https://piston-data.mojang.com/v1/objects/4d1826eebac84847c71a77f9349cc22afd0cf0a1/server.jar",
-			"index": 21
+			"index": 22
 		},
 		"1.15": {
 			"client": "https://piston-data.mojang.com/v1/objects/7b07fd09d1e3aae1bc7a1304fedc73bfe5d81800/client.jar",
@@ -183,7 +191,7 @@
 			"time_formatted": "2019-12-09",
 			"time_year": 2019,
 			"server": "https://piston-data.mojang.com/v1/objects/e9f105b3c5c7e85c7b445249a93362a22f62442d/server.jar",
-			"index": 22
+			"index": 23
 		},
 		"1.14.4": {
 			"client": "https://piston-data.mojang.com/v1/objects/8c325a0c5bd674dd747d6ebaa4c791fd363ad8a9/client.jar",
@@ -191,7 +199,7 @@
 			"time_formatted": "2019-07-19",
 			"time_year": 2019,
 			"server": "https://piston-data.mojang.com/v1/objects/3dc3d84a581f14691199cf6831b71ed1296a9fdf/server.jar",
-			"index": 23
+			"index": 24
 		},
 		"1.14.3": {
 			"client": "https://piston-data.mojang.com/v1/objects/af100b34ec7ef2b8b9cf7775b544d21d690dddec/client.jar",
@@ -199,7 +207,7 @@
 			"time_formatted": "2019-06-24",
 			"time_year": 2019,
 			"server": "https://piston-data.mojang.com/v1/objects/d0d0fe2b1dc6ab4c65554cb734270872b72dadd6/server.jar",
-			"index": 24
+			"index": 25
 		},
 		"1.14.2": {
 			"client": "https://piston-data.mojang.com/v1/objects/ca6c5a139045967229975c0c0b7f93e78b4314c2/client.jar",
@@ -207,7 +215,7 @@
 			"time_formatted": "2019-05-27",
 			"time_year": 2019,
 			"server": "https://piston-data.mojang.com/v1/objects/808be3869e2ca6b62378f9f4b33c946621620019/server.jar",
-			"index": 25
+			"index": 26
 		},
 		"1.14.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/55ba86ddcbc3579397f41910463ffd4056e1e523/client.jar",
@@ -215,7 +223,7 @@
 			"time_formatted": "2019-05-13",
 			"time_year": 2019,
 			"server": "https://piston-data.mojang.com/v1/objects/ed76d597a44c5266be2a7fcd77a8270f1f0bc118/server.jar",
-			"index": 26
+			"index": 27
 		},
 		"1.14": {
 			"client": "https://piston-data.mojang.com/v1/objects/7a762a59345c13af7d87111207a93f5a8607f6c0/client.jar",
@@ -223,7 +231,7 @@
 			"time_formatted": "2019-04-23",
 			"time_year": 2019,
 			"server": "https://piston-data.mojang.com/v1/objects/f1a0073671057f01aa843443fef34330281333ce/server.jar",
-			"index": 27
+			"index": 28
 		},
 		"1.13.2": {
 			"client": "https://piston-data.mojang.com/v1/objects/30bfe37a8db404db11c7edf02cb5165817afb4d9/client.jar",
@@ -231,7 +239,7 @@
 			"time_formatted": "2018-10-22",
 			"time_year": 2018,
 			"server": "https://piston-data.mojang.com/v1/objects/3737db93722a9e39eeada7c27e7aca28b144ffa7/server.jar",
-			"index": 28
+			"index": 29
 		},
 		"1.13.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/8de235e5ec3a7fce168056ea395d21cbdec18d7c/client.jar",
@@ -239,7 +247,7 @@
 			"time_formatted": "2018-08-22",
 			"time_year": 2018,
 			"server": "https://piston-data.mojang.com/v1/objects/fe123682e9cb30031eae351764f653500b7396c9/server.jar",
-			"index": 29
+			"index": 30
 		},
 		"1.13": {
 			"client": "https://piston-data.mojang.com/v1/objects/c0b970952cdd279912da384cdbfc0c26e6c6090b/client.jar",
@@ -247,7 +255,7 @@
 			"time_formatted": "2018-07-18",
 			"time_year": 2018,
 			"server": "https://piston-data.mojang.com/v1/objects/d0caafb8438ebd206f99930cfaecfa6c9a13dca0/server.jar",
-			"index": 30
+			"index": 31
 		},
 		"1.12.2": {
 			"client": "https://piston-data.mojang.com/v1/objects/0f275bc1547d01fa5f56ba34bdc87d981ee12daf/client.jar",
@@ -255,7 +263,7 @@
 			"time_formatted": "2017-09-18",
 			"time_year": 2017,
 			"server": "https://piston-data.mojang.com/v1/objects/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar",
-			"index": 31
+			"index": 32
 		},
 		"1.12.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/83385d346cf7f97d1e447b888750fb88e9928b93/client.jar",
@@ -263,7 +271,7 @@
 			"time_formatted": "2017-08-03",
 			"time_year": 2017,
 			"server": "https://piston-data.mojang.com/v1/objects/561c7b2d54bae80cc06b05d950633a9ac95da816/server.jar",
-			"index": 32
+			"index": 33
 		},
 		"1.12": {
 			"client": "https://piston-data.mojang.com/v1/objects/909823f9c467f9934687f136bc95a667a0d19d7f/client.jar",
@@ -271,7 +279,7 @@
 			"time_formatted": "2017-06-02",
 			"time_year": 2017,
 			"server": "https://piston-data.mojang.com/v1/objects/8494e844e911ea0d63878f64da9dcc21f53a3463/server.jar",
-			"index": 33
+			"index": 34
 		},
 		"1.11.2": {
 			"client": "https://piston-data.mojang.com/v1/objects/db5aa600f0b0bf508aaf579509b345c4e34087be/client.jar",
@@ -279,7 +287,7 @@
 			"time_formatted": "2016-12-21",
 			"time_year": 2016,
 			"server": "https://piston-data.mojang.com/v1/objects/f00c294a1576e03fddcac777c3cf4c7d404c4ba4/server.jar",
-			"index": 34
+			"index": 35
 		},
 		"1.11.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/0935745a11806d6b4cf00221938e7560c23f9291/client.jar",
@@ -287,7 +295,7 @@
 			"time_formatted": "2016-12-20",
 			"time_year": 2016,
 			"server": "https://piston-data.mojang.com/v1/objects/1f97bd101e508d7b52b3d6a7879223b000b5eba0/server.jar",
-			"index": 35
+			"index": 36
 		},
 		"1.11": {
 			"client": "https://piston-data.mojang.com/v1/objects/780e46b3a96091a7f42c028c615af45974629072/client.jar",
@@ -295,7 +303,7 @@
 			"time_formatted": "2016-11-14",
 			"time_year": 2016,
 			"server": "https://piston-data.mojang.com/v1/objects/48820c84cb1ed502cb5b2fe23b8153d5e4fa61c0/server.jar",
-			"index": 36
+			"index": 37
 		},
 		"1.10.2": {
 			"client": "https://piston-data.mojang.com/v1/objects/dc8e75ac7274ff6af462b0dcec43c307de668e40/client.jar",
@@ -303,7 +311,7 @@
 			"time_formatted": "2016-06-23",
 			"time_year": 2016,
 			"server": "https://piston-data.mojang.com/v1/objects/3d501b23df53c548254f5e3f66492d178a48db63/server.jar",
-			"index": 37
+			"index": 38
 		},
 		"1.10.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/44b389fff90324c4ca18796d4428a7b8ec6c2eb0/client.jar",
@@ -311,7 +319,7 @@
 			"time_formatted": "2016-06-22",
 			"time_year": 2016,
 			"server": "https://piston-data.mojang.com/v1/objects/cb4c6f9f51a845b09a8861cdbe0eea3ff6996dee/server.jar",
-			"index": 38
+			"index": 39
 		},
 		"1.10": {
 			"client": "https://piston-data.mojang.com/v1/objects/ba038efbc6d9e4a046927a7658413d0276895739/client.jar",
@@ -319,7 +327,7 @@
 			"time_formatted": "2016-06-08",
 			"time_year": 2016,
 			"server": "https://piston-data.mojang.com/v1/objects/a96617ffdf5dabbb718ab11a9a68e50545fc5bee/server.jar",
-			"index": 39
+			"index": 40
 		},
 		"1.9.4": {
 			"client": "https://piston-data.mojang.com/v1/objects/4a61c873be90bb1196d68dac7b29870408c56969/client.jar",
@@ -327,7 +335,7 @@
 			"time_formatted": "2016-05-10",
 			"time_year": 2016,
 			"server": "https://piston-data.mojang.com/v1/objects/edbb7b1758af33d365bf835eb9d13de005b1e274/server.jar",
-			"index": 40
+			"index": 41
 		},
 		"1.9.3": {
 			"client": "https://piston-data.mojang.com/v1/objects/b6985b0d3a0520dfb6f17eeb1e8ba58ce9577061/client.jar",
@@ -335,7 +343,7 @@
 			"time_formatted": "2016-05-10",
 			"time_year": 2016,
 			"server": "https://piston-data.mojang.com/v1/objects/8e897b6b6d784f745332644f4d104f7a6e737ccf/server.jar",
-			"index": 41
+			"index": 42
 		},
 		"1.9.2": {
 			"client": "https://piston-data.mojang.com/v1/objects/19106fd5e222dca0f2dde9f66db8384c9a7db957/client.jar",
@@ -343,7 +351,7 @@
 			"time_formatted": "2016-03-30",
 			"time_year": 2016,
 			"server": "https://piston-data.mojang.com/v1/objects/2b95cc7b136017e064c46d04a5825fe4cfa1be30/server.jar",
-			"index": 42
+			"index": 43
 		},
 		"1.9.1": {
 			"client": "https://piston-data.mojang.com/v1/objects/9bc7f02323d90b9385c1a5dbd47fb144a3fb8835/client.jar",
@@ -351,7 +359,7 @@
 			"time_formatted": "2016-03-30",
 			"time_year": 2016,
 			"server": "https://piston-data.mojang.com/v1/objects/bf95d9118d9b4b827f524c878efd275125b56181/server.jar",
-			"index": 43
+			"index": 44
 		},
 		"1.9": {
 			"client": "https://piston-data.mojang.com/v1/objects/2f67dfe8953299440d1902f9124f0f2c3a2c940f/client.jar",
@@ -359,7 +367,7 @@
 			"time_formatted": "2016-02-29",
 			"time_year": 2016,
 			"server": "https://piston-data.mojang.com/v1/objects/b4d449cf2918e0f3bd8aa18954b916a4d1880f0d/server.jar",
-			"index": 44
+			"index": 45
 		},
 		"1.8.9": {
 			"client": "https://launcher.mojang.com/v1/objects/3870888a6c3d349d3771a3e9d16c9bf5e076b908/client.jar",
@@ -367,7 +375,7 @@
 			"time_formatted": "2015-12-03",
 			"time_year": 2015,
 			"server": "https://launcher.mojang.com/v1/objects/b58b2ceb36e01bcd8dbf49c8fb66c55a9f0676cd/server.jar",
-			"index": 45
+			"index": 46
 		},
 		"1.8.8": {
 			"client": "https://launcher.mojang.com/v1/objects/0983f08be6a4e624f5d85689d1aca869ed99c738/client.jar",
@@ -375,7 +383,7 @@
 			"time_formatted": "2015-07-27",
 			"time_year": 2015,
 			"server": "https://launcher.mojang.com/v1/objects/5fafba3f58c40dc51b5c3ca72a98f62dfdae1db7/server.jar",
-			"index": 46
+			"index": 47
 		},
 		"1.8.7": {
 			"client": "https://launcher.mojang.com/v1/objects/d546a6a092060c85f1eb1d9213ff823c558b1255/client.jar",
@@ -383,7 +391,7 @@
 			"time_formatted": "2015-06-05",
 			"time_year": 2015,
 			"server": "https://launcher.mojang.com/v1/objects/35c59e16d1f3b751cd20b76b9b8a19045de363a9/server.jar",
-			"index": 47
+			"index": 48
 		},
 		"1.8.6": {
 			"client": "https://launcher.mojang.com/v1/objects/faa55e34ded35089d34fe921ea83d317fc152e93/client.jar",
@@ -391,7 +399,7 @@
 			"time_formatted": "2015-05-25",
 			"time_year": 2015,
 			"server": "https://launcher.mojang.com/v1/objects/2bd44b53198f143fb278f8bec3a505dad0beacd2/server.jar",
-			"index": 48
+			"index": 49
 		},
 		"1.8.5": {
 			"client": "https://launcher.mojang.com/v1/objects/5d39957c61d19042f8bd669a6faa99989cf37083/client.jar",
@@ -399,7 +407,7 @@
 			"time_formatted": "2015-05-22",
 			"time_year": 2015,
 			"server": "https://launcher.mojang.com/v1/objects/ea6dd23658b167dbc0877015d1072cac21ab6eee/server.jar",
-			"index": 49
+			"index": 50
 		},
 		"1.8.4": {
 			"client": "https://launcher.mojang.com/v1/objects/459204fabee3fd9976a6c942b24cbd8382d02d6e/client.jar",
@@ -407,7 +415,7 @@
 			"time_formatted": "2015-04-17",
 			"time_year": 2015,
 			"server": "https://launcher.mojang.com/v1/objects/dd4b5eba1c79500390e0b0f45162fa70d38f8a3d/server.jar",
-			"index": 50
+			"index": 51
 		},
 		"1.8.3": {
 			"client": "https://launcher.mojang.com/v1/objects/69d14463ddc22e581bc66c66ef5eb72a8b452c46/client.jar",
@@ -415,7 +423,7 @@
 			"time_formatted": "2015-02-20",
 			"time_year": 2015,
 			"server": "https://launcher.mojang.com/v1/objects/163ba351cb86f6390450bb2a67fafeb92b6c0f2f/server.jar",
-			"index": 51
+			"index": 52
 		},
 		"1.8.2": {
 			"client": "https://launcher.mojang.com/v1/objects/a8e71f6c81acfa834d249579a242f5b0852075c1/client.jar",
@@ -423,7 +431,7 @@
 			"time_formatted": "2015-02-19",
 			"time_year": 2015,
 			"server": "https://launcher.mojang.com/v1/objects/a37bdd5210137354ed1bfe3dac0a5b77fe08fe2e/server.jar",
-			"index": 52
+			"index": 53
 		},
 		"1.8.1": {
 			"client": "https://launcher.mojang.com/v1/objects/6edd2a3e3d76a7602c52f319f87cf11f7720b43b/client.jar",
@@ -431,7 +439,7 @@
 			"time_formatted": "2014-11-24",
 			"time_year": 2014,
 			"server": "https://launcher.mojang.com/v1/objects/68bfb524888f7c0ab939025e07e5de08843dac0f/server.jar",
-			"index": 53
+			"index": 54
 		},
 		"1.8": {
 			"client": "https://launcher.mojang.com/v1/objects/d722504db9de2b47f46cc592b8528446272ae648/client.jar",
@@ -439,7 +447,7 @@
 			"time_formatted": "2014-09-02",
 			"time_year": 2014,
 			"server": "https://launcher.mojang.com/v1/objects/a028f00e678ee5c6aef0e29656dca091b5df11c7/server.jar",
-			"index": 54
+			"index": 55
 		},
 		"1.7.10": {
 			"client": "https://launcher.mojang.com/v1/objects/e80d9b3bf5085002218d4be59e668bac718abbc6/client.jar",
@@ -447,7 +455,7 @@
 			"time_formatted": "2014-05-14",
 			"time_year": 2014,
 			"server": "https://launcher.mojang.com/v1/objects/952438ac4e01b4d115c5fc38f891710c4941df29/server.jar",
-			"index": 55
+			"index": 56
 		},
 		"1.7.9": {
 			"client": "https://launcher.mojang.com/v1/objects/fbbaae784b1de315a8d08a82c6c345a583fb676b/client.jar",
@@ -455,7 +463,7 @@
 			"time_formatted": "2014-04-14",
 			"time_year": 2014,
 			"server": "https://launcher.mojang.com/v1/objects/4cec86a928ec171fdc0c6b40de2de102f21601b5/server.jar",
-			"index": 56
+			"index": 57
 		},
 		"1.7.8": {
 			"client": "https://launcher.mojang.com/v1/objects/83ae44189888a873f46f7509a87ebdb6dc785741/client.jar",
@@ -463,7 +471,7 @@
 			"time_formatted": "2014-04-09",
 			"time_year": 2014,
 			"server": "https://launcher.mojang.com/v1/objects/c69ebfb84c2577661770371c4accdd5f87b8b21d/server.jar",
-			"index": 57
+			"index": 58
 		},
 		"1.7.7": {
 			"client": "https://launcher.mojang.com/v1/objects/e520f254a2b496d61839b816d712e238b1243f30/client.jar",
@@ -471,7 +479,7 @@
 			"time_formatted": "2014-04-09",
 			"time_year": 2014,
 			"server": "https://launcher.mojang.com/v1/objects/a6ffc1624da980986c6cc12a1ddc79ab1b025c62/server.jar",
-			"index": 58
+			"index": 59
 		},
 		"1.7.6": {
 			"client": "https://launcher.mojang.com/v1/objects/6b2c5827994e17f904f0852f962dd6fccfbb8bdc/client.jar",
@@ -479,7 +487,7 @@
 			"time_formatted": "2014-04-09",
 			"time_year": 2014,
 			"server": "https://launcher.mojang.com/v1/objects/41ea7757d4d7f74b95fc1ac20f919a8e521e910c/server.jar",
-			"index": 59
+			"index": 60
 		},
 		"1.7.5": {
 			"client": "https://launcher.mojang.com/v1/objects/77aa70ac5054cbf1140b6449b579e950d5050c4a/client.jar",
@@ -487,7 +495,7 @@
 			"time_formatted": "2014-02-26",
 			"time_year": 2014,
 			"server": "https://launcher.mojang.com/v1/objects/e1d557b2e31ea881404e41b05ec15c810415e060/server.jar",
-			"index": 60
+			"index": 61
 		},
 		"1.7.4": {
 			"client": "https://launcher.mojang.com/v1/objects/900950d8e3217b3a42405d1ecf767dcc31239d69/client.jar",
@@ -495,7 +503,7 @@
 			"time_formatted": "2013-12-09",
 			"time_year": 2013,
 			"server": "https://launcher.mojang.com/v1/objects/61220311cef80aecc4cd8afecd5f18ca6b9461ff/server.jar",
-			"index": 61
+			"index": 62
 		},
 		"1.7.3": {
 			"client": "https://launcher.mojang.com/v1/objects/feaf10fa9da94c388f2c53a2cf31a14406d0c532/client.jar",
@@ -503,7 +511,7 @@
 			"time_formatted": "2013-12-06",
 			"time_year": 2013,
 			"server": "https://launcher.mojang.com/v1/objects/707857a7bc7bf54fe60d557cca71004c34aa07bb/server.jar",
-			"index": 62
+			"index": 63
 		},
 		"1.7.2": {
 			"client": "https://launcher.mojang.com/v1/objects/0c8689f904922af71c7144dcfb81bce976cadd49/client.jar",
@@ -511,7 +519,7 @@
 			"time_formatted": "2013-10-25",
 			"time_year": 2013,
 			"server": "https://launcher.mojang.com/v1/objects/3716cac82982e7c2eb09f83028b555e9ea606002/server.jar",
-			"index": 63
+			"index": 64
 		},
 		"1.6.4": {
 			"client": "https://launcher.mojang.com/v1/objects/1703704407101cf72bd88e68579e3696ce733ecd/client.jar",
@@ -519,7 +527,7 @@
 			"time_formatted": "2013-09-19",
 			"time_year": 2013,
 			"server": "https://launcher.mojang.com/v1/objects/050f93c1f3fe9e2052398f7bd6aca10c63d64a87/server.jar",
-			"index": 64
+			"index": 65
 		},
 		"1.6.2": {
 			"client": "https://launcher.mojang.com/v1/objects/b6cb68afde1d9cf4a20cbf27fa90d0828bf440a4/client.jar",
@@ -527,7 +535,7 @@
 			"time_formatted": "2013-07-05",
 			"time_year": 2013,
 			"server": "https://launcher.mojang.com/v1/objects/01b6ea555c6978e6713e2a2dfd7fe19b1449ca54/server.jar",
-			"index": 65
+			"index": 66
 		},
 		"1.6.1": {
 			"client": "https://launcher.mojang.com/v1/objects/17e2c28fb54666df5640b2c822ea8042250ef592/client.jar",
@@ -535,7 +543,7 @@
 			"time_formatted": "2013-06-28",
 			"time_year": 2013,
 			"server": "https://launcher.mojang.com/v1/objects/0252918a5f9d47e3c6eb1dfec02134d1374a89b4/server.jar",
-			"index": 66
+			"index": 67
 		},
 		"1.5.2": {
 			"client": "https://launcher.mojang.com/v1/objects/465378c9dc2f779ae1d6e8046ebc46fb53a57968/client.jar",
@@ -543,7 +551,7 @@
 			"time_formatted": "2013-04-25",
 			"time_year": 2013,
 			"server": "https://launcher.mojang.com/v1/objects/f9ae3f651319151ce99a0bfad6b34fa16eb6775f/server.jar",
-			"index": 67
+			"index": 68
 		},
 		"1.5.1": {
 			"client": "https://launcher.mojang.com/v1/objects/047136381a552f34b1963c43304a1ad4dc0d2d8e/client.jar",
@@ -551,7 +559,7 @@
 			"time_formatted": "2013-03-20",
 			"time_year": 2013,
 			"server": "https://launcher.mojang.com/v1/objects/d07c71ee2767dabb79fb32dad8162e1b854d5324/server.jar",
-			"index": 68
+			"index": 69
 		},
 		"1.4.7": {
 			"client": "https://launcher.mojang.com/v1/objects/53ed4b9d5c358ecfff2d8b846b4427b888287028/client.jar",
@@ -559,7 +567,7 @@
 			"time_formatted": "2012-12-27",
 			"time_year": 2012,
 			"server": "https://launcher.mojang.com/v1/objects/2f0ec8efddd2f2c674c77be9ddb370b727dec676/server.jar",
-			"index": 69
+			"index": 70
 		},
 		"1.4.6": {
 			"client": "https://launcher.mojang.com/v1/objects/116758f41b32e8d1a71a4ad6236579acd724bca7/client.jar",
@@ -567,7 +575,7 @@
 			"time_formatted": "2012-12-19",
 			"time_year": 2012,
 			"server": "https://launcher.mojang.com/v1/objects/a0aeb5709af5f2c3058c1cf0dc6b110a7a61278c/server.jar",
-			"index": 70
+			"index": 71
 		},
 		"1.4.5": {
 			"client": "https://launcher.mojang.com/v1/objects/7a8a963ababfec49406e1541d3a87198e50604e5/client.jar",
@@ -575,7 +583,7 @@
 			"time_formatted": "2012-12-19",
 			"time_year": 2012,
 			"server": "https://launcher.mojang.com/v1/objects/c12fd88a8233d2c517dbc8196ba2ae855f4d36ea/server.jar",
-			"index": 71
+			"index": 72
 		},
 		"1.4.4": {
 			"client": "https://launcher.mojang.com/v1/objects/b9b2a9e9adf1bc834647febc93a4222b4fd6e403/client.jar",
@@ -583,7 +591,7 @@
 			"time_formatted": "2012-12-13",
 			"time_year": 2012,
 			"server": "https://launcher.mojang.com/v1/objects/4215dcadb706508bf9d6d64209a0080b9cee9e71/server.jar",
-			"index": 72
+			"index": 73
 		},
 		"1.4.2": {
 			"client": "https://launcher.mojang.com/v1/objects/42d6744cfbbd2958f9e6688dd6e78d86d658d0d4/client.jar",
@@ -591,7 +599,7 @@
 			"time_formatted": "2012-11-24",
 			"time_year": 2012,
 			"server": "https://launcher.mojang.com/v1/objects/5be700523a729bb78ef99206fb480a63dcd09825/server.jar",
-			"index": 73
+			"index": 74
 		},
 		"1.3.2": {
 			"client": "https://launcher.mojang.com/v1/objects/c2efd57c7001ddf505ca534e54abf3d006e48309/client.jar",
@@ -599,7 +607,7 @@
 			"time_formatted": "2012-08-15",
 			"time_year": 2012,
 			"server": "https://launcher.mojang.com/v1/objects/3de2ae6c488135596e073a9589842800c9f53bfe/server.jar",
-			"index": 74
+			"index": 75
 		},
 		"1.3.1": {
 			"client": "https://launcher.mojang.com/v1/objects/33167e71e85ab8e6ddbe168bc67f6ec19d708d62/client.jar",
@@ -607,7 +615,7 @@
 			"time_formatted": "2012-07-31",
 			"time_year": 2012,
 			"server": "https://launcher.mojang.com/v1/objects/82563ce498bfc1fc8a2cb5bf236f7da86a390646/server.jar",
-			"index": 75
+			"index": 76
 		},
 		"1.2.5": {
 			"client": "https://launcher.mojang.com/v1/objects/4a2fac7504182a97dcbcd7560c6392d7c8139928/client.jar",
@@ -615,7 +623,7 @@
 			"time_formatted": "2012-03-29",
 			"time_year": 2012,
 			"server": "https://launcher.mojang.com/v1/objects/d8321edc9470e56b8ad5c67bbd16beba25843336/server.jar",
-			"index": 76
+			"index": 77
 		},
 		"1.2.4": {
 			"client": "https://launcher.mojang.com/v1/objects/ad6d1fe7455857269d4185cb8f24e62cc0241aaf/client.jar",
@@ -623,7 +631,7 @@
 			"time_formatted": "2012-03-21",
 			"time_year": 2012,
 			"server": "https://assets.minecraft.net/1_2_5/minecraft_server.jar",
-			"index": 77
+			"index": 78
 		},
 		"1.2.3": {
 			"client": "https://launcher.mojang.com/v1/objects/5134e433afeba375c00bbdcd8aead1d3222813ee/client.jar",
@@ -631,7 +639,7 @@
 			"time_formatted": "2012-03-01",
 			"time_year": 2012,
 			"server": "https://assets.minecraft.net/1_2/minecraft_server.jar",
-			"index": 78
+			"index": 79
 		},
 		"1.2.2": {
 			"client": "https://launcher.mojang.com/v1/objects/1dadfc4de6898751f547f24f72c7271218e4e28f/client.jar",
@@ -639,7 +647,7 @@
 			"time_formatted": "2012-02-29",
 			"time_year": 2012,
 			"server": "https://assets.minecraft.net/1_2/minecraft_server.jar",
-			"index": 79
+			"index": 80
 		},
 		"1.2.1": {
 			"client": "https://launcher.mojang.com/v1/objects/c7662ac43dd04bfd677694a06972a2aaaf426505/client.jar",
@@ -647,21 +655,21 @@
 			"time_formatted": "2012-02-29",
 			"time_year": 2012,
 			"server": "https://assets.minecraft.net/1_2/minecraft_server.jar",
-			"index": 80
+			"index": 81
 		},
 		"1.1": {
 			"client": "https://launcher.mojang.com/v1/objects/f690d4136b0026d452163538495b9b0e8513d718/client.jar",
 			"time": "2012-01-11T22:00:00.000Z",
 			"time_formatted": "2012-01-11",
 			"time_year": 2012,
-			"index": 81
+			"index": 82
 		},
 		"1.0": {
 			"client": "https://launcher.mojang.com/v1/objects/b679fea27f2284836202e9365e13a82552092e5d/client.jar",
 			"time": "2011-11-17T22:00:00.000Z",
 			"time_formatted": "2011-11-17",
 			"time_year": 2011,
-			"index": 82
+			"index": 83
 		}
 	},
 	"snapshot": {
