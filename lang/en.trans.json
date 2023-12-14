@@ -1,0 +1,95 @@
+{
+	"Info": {
+		"AuthorName": "stsaria",
+		"Explanation": "Japanese language files"
+	},
+	"ErrorMessage": {},
+	"Message": {
+		"Main": {
+			"HelpMessage": [
+				"Frequently used help",
+				"If no arguments are entered, the selection mode selection screen is displayed.",
+				"--search/@listserverip@ : Server search",
+				"--start-list-server : start server (list server)",
+				"--start-minecraft-server : start server (standby)(minecraft-server)\n"
+			],
+			"ModeSelectMessage": [
+				"Select the mode. \n",
+				"[1] : Client mode (server creation/search)",
+				"[2] : Minecraft server mode (server support and registration to the list)",
+				"[3] : Listserver mode (Minecraft server list)",
+				"[4] : End"
+			]
+		},
+		"ListServer": {
+			"SetupMessage": [
+				"Are you new to setting up this list server?",
+				"Notes.",
+				"If you wish to make the file public outside of the local area, please open TCP port 50384 on your router or other device.",
+				"Logs including IP information are recorded in listserver.log in the log folder.",
+				"If you have more than a sensible number of accesses (DOS, etc), you may want to router block the IP.\n",
+				"Do you want to create it?",
+				"[1] : Create",
+				"[2] : Back"
+			],
+			"Message": [
+				"Press Ctrl and C to exit"
+			]
+		},
+		"Client": {
+			"WordMessage": [
+				"total number",
+				"Name",
+				"Language(Country)",
+				"team",
+				"PS",
+				"Minecraft",
+				"list"
+			],
+			"ModeSelectMessage": [
+				"Select the client mode.",
+				"*Create a server only if you have the 'JAVA' version of Minecraft installed! \n",
+				"[1] : Server Search",
+				"[2] : Server startup (automatic)",
+				"[3] : Server startup (manual)",
+				"[4] : Back"
+			],
+			"Message": [
+				"Success.",
+				"Failed.",
+				"Please enter server IP",
+				"Please enter the server Motd.",
+				"Server version : @version@\nServer port : @port@",
+				"Normal termination",
+				"I'm making sure the server port is open.",
+				"The connected server is connected to other clients.",
+				"Enter your MCID (not UUID) (give OP privileges to this MCID)",
+				"Abnormal termination."
+			],
+			"StartServerMessage": [
+				"Please wait for the server to start up.",
+				"*Ctrl+C will not stop the server!",
+				"Use the command '/stop' on the Minecraft server to stop the server",
+				"However, the server will close automatically after one hour",
+				"However, that method can be very annoying and should be avoided as much as possible!"
+			]
+		},
+		"MinecraftServer": {
+			"ModeSelectMessage": [
+				"Select minecraft server mode. \n",
+				"[1] : Server startup",
+				"[2] : Server Registration (List Server)",
+				"[3] : Back"
+			],
+			"Message": [
+				"Press Ctrl and C to exit",
+				"This computer does not have Java in it,\nor is it set in the environment variable.",
+				"Please enter server IP",
+				"Please enter a server name",
+				"Please enter a supplement",
+				"Success.",
+				"Failed."
+			]
+		}
+	}
+}

@@ -1,7 +1,7 @@
 import configparser, socket, os
 
 check_path_list = ["lang", "config", "data", "minecraft", "config/basic.ini", "config/minecraftserver.ini"]
-make_list = ["data?dir"]
+make_list = ["data?dir", "minecraft?dir"]
 
 def network(check_host = "www.google.com", check_port = 80):
     try:
