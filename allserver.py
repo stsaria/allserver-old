@@ -1,4 +1,4 @@
-import minecraft_server, list_server, logging, client, check, etc, sys, os
+import minecraft_server, list_server, logging, client, build, check, etc, sys, os
 
 def main(args : list):
     lang = etc.load_lang()
@@ -26,6 +26,8 @@ def main(args : list):
                 return 0
         elif "--start-list-server" in args:
             list_server.start_server()
+        elif "--build" in args:
+            build.install()
         elif "--search" in args[1] and len(args[1].split("/")) == 2:
             mode_list = ["0", "0"]
             if "--plus-not-lang" in args:

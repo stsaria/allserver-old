@@ -98,6 +98,8 @@ Systemdやスタートアップなどで起動する際に使用できます
 - `--start-minecraft-server`　マインクラフトサーバーを起動（待機）`python3 allserver.py --start-minecraft-server`
 
 - `--start-list-server` リストサーバーを起動 `python3 allserver.py --start-list-server`
+
+- `--build` ソースコードをビルド (WSL PyinstallerとWindows Pyinstallerが必要) `python3 allserver.py --build`
 ## クライアントの使い方
 ### サーバーの検索
 1. allserver.pyを起動

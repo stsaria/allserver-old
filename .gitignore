@@ -163,6 +163,3 @@ cython_debug/
 data/
 log/
 minecraft/
-
-# build
-inin.py
