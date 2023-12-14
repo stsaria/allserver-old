@@ -25,9 +25,15 @@ def main(args : list):
                 logger.info("STOP!!")
                 return 0
         elif "--start-list-server" in args:
-                list_server.start_server()
+            list_server.start_server()
         elif "--search" in args[1] and len(args[1].split("/")) == 2:
-            client.search_servers(args[1].split("/")[1])
+            mode_list = ["0", "0"]
+            if "--plus-not-lang" in args:
+                mode_list[0] = "1"
+            if "--not-plus-team" in args:
+                mode_list[1] = "1"
+            mode = "".join(mode_list)
+            client.search_servers(args[1].split("/")[1], mode = mode)
     else:
         print("\n".join(lang["Message"]["Main"]["ModeSelectMessage"]))
         while True:

@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.NOTSET, handlers=[stream_handler, file_handler
 logger = logging.getLogger(__name__)
 
 ini = configparser.ConfigParser()
-ini.read('config/minecraft.ini', 'UTF-8')
+ini.read('config/minecraftserver.ini', 'UTF-8')
 
 def replace_func(fname, replace_set):
     target, replace = replace_set
@@ -78,10 +78,10 @@ def get_minecraft_versions():
     return 0, minecraft_versions[0], minecraft_versions[1]
 
 def get_minecraft_url(version):
-    if download_file("http://mcversions.net/mcversions.json", "data/version.json") == False:
+    if download_file("http://mcversions.net/mcversions.json", "minecraft/version.json") == False:
         return 1, "not"
     try:
-        file = open('data/version.json', 'r')
+        file = open('minecraft/version.json', 'r')
         json_object = json.load(file)
         minecraft_editions = ["stable", "snapshot"]
         successs = []

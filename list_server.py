@@ -75,11 +75,14 @@ def handle_client(client_socket, address):
                 break
             logger.info(f"Receive : {address}")
             if data.decode('utf-8').split(',')[0] == "0":
+                location = data.decode('utf-8').split(",")[1].split("/")
+                if len(location) != 2:
+                    location = ["", ""]
                 if len(data.decode('utf-8').split(',')) != 3:
                     client_socket.sendall("1".encode('utf-8'))
                     logger.info(f"Send : {address}")
                     break
-                result, servers = search_servers(location = data.decode('utf-8').split(",")[1].split("/"), team = data.decode('utf-8').split(",")[2].split("/"))
+                result, servers = search_servers(location = location, team = data.decode('utf-8').split(",")[2].split("/"))
                 if result != 0:
                     client_socket.sendall("2".encode('utf-8'))
                     logger.info(f"Send : {address}")

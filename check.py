@@ -1,6 +1,6 @@
 import configparser, socket, os
 
-check_path_list = ["lang", "config", "data", "minecraft", "config/basic.ini", "config/minecraft.ini"]
+check_path_list = ["lang", "config", "data", "minecraft", "config/basic.ini", "config/minecraftserver.ini"]
 make_list = ["data?dir"]
 
 def network(check_host = "www.google.com", check_port = 80):
@@ -39,7 +39,7 @@ def ini():
         _ = ini['team']['team_list']
         
         ini = configparser.ConfigParser()
-        ini.read('config/minecraft.ini', 'UTF-8')
+        ini.read('config/minecraftserver.ini', 'UTF-8')
         _ = ini['basic']['version']
         _ = ini['basic']['port']
     except:

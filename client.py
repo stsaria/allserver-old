@@ -8,7 +8,7 @@ def is_socket_closed(sock):
     except socket.error:
         return True
 
-def search_servers(host, port = 50384, mode = "000", isprint = True):
+def search_servers(host, port = 50384, mode = "00", isprint = True, select_lang = ""):
     ini = configparser.ConfigParser()
     ini.read('config/basic.ini', 'UTF-8')
     lang = etc.load_lang()
@@ -20,7 +20,10 @@ def search_servers(host, port = 50384, mode = "000", isprint = True):
 
         send_data = ","
         if mode[0] == "0":
-            send_data = ini['lang']['lang']+"/"+ini['lang']['spare_lang']+send_data
+            if select_lang == "":
+                send_data = ini['lang']['lang']+"/"+ini['lang']['spare_lang']+send_data
+            else:
+                send_data = select_lang+"/"+select_lang+send_data
         if mode[1] == "0":
             send_data = send_data+ini['team']['team_list']
         send_data = "0,"+send_data
@@ -39,11 +42,10 @@ def search_servers(host, port = 50384, mode = "000", isprint = True):
         data = client_socket.recv(1024)
         
         if isprint == True:
-            if mode[2] == "0":
-                print(word[0]+f" : {len(pickle.loads(data))}\n")
-                for i in pickle.loads(data):
-                    print(word[1]+f":{i[0]} IP:{i[1]} "+word[2]+f":{i[2]} "+word[3]+f":{i[3]} "+word[4]+f":{i[4]}")
-                input()
+            print(word[0]+f" : {len(pickle.loads(data))}\n")
+            for i in pickle.loads(data):
+                print(word[1]+f":{i[0]} IP:{i[1]} "+word[2]+f":{i[2]} "+word[3]+f":{i[3]} "+word[4]+f":{i[4]}")
+            input()
         servers = pickle.loads(data)
     except:
         if isprint == True:
