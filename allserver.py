@@ -1,4 +1,5 @@
-import minecraft_server, list_server, logging, client, build, check, etc, sys, os
+import minecraft_server, list_server, client, check, build, etc
+import logging, sys, os
 
 def main(args : list):
     lang = etc.load_lang()

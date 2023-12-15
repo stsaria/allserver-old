@@ -15,7 +15,7 @@
                 "   --plus-not-team : チーム関係なくサーバー検索",
                 "--start-list-server : サーバー起動(リストサーバー)",
                 "--start-minecraft-server : サーバー起動(待機)(マインクラフトサーバー)",
-                "--build : Allserverをビルド (WSL PyinstallerとWindows Pyinstallerが必要)\n"],
+                "--build : Allserverをビルド (Windows Pyinstallerが必要)\n"],
 
                 "ModeSelectMessage":
                 ["モードを選択してください。\n",

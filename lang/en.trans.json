@@ -14,7 +14,7 @@
 				"   --plus-not-team : server search regardless of team",
 				"--start-list-server : start server (list server)",
 				"--start-minecraft-server : start server (standby)(minecraft-server)",
-				"--build : Build Allserver (Need WSL Pyinstaller, Windows Pyinstaller)\n"
+				"--build : Build Allserver (Need Windows Pyinstaller)\n"
 
 			],
 			"ModeSelectMessage": [

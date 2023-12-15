@@ -162,6 +162,7 @@ cython_debug/
 # allserver
 data/
 log/
+bin/
 minecraft/
 *.zip
 *.tar.gz

@@ -99,7 +99,7 @@ Systemdやスタートアップなどで起動する際に使用できます
 
 - `--start-list-server` リストサーバーを起動 `python3 allserver.py --start-list-server`
 
-- `--build` ソースコードをビルド (WSL PyinstallerとWindows Pyinstallerが必要) `python3 allserver.py --build`
+- `--build` ソースコードをビルド (Windows Pyinstallerが必要) `python3 allserver.py --build`
 ## クライアントの使い方
 ### サーバーの検索
 1. allserver.pyを起動
