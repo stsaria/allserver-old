@@ -24,3 +24,5 @@ def install():
     pyinstall()
     copy_need_file()
     copy_src_file()
+    shutil.make_archive('allserver', 'zip', root_dir='./dist')
+    shutil.make_archive('allserver', 'gztar', root_dir='./dist')
