@@ -20,7 +20,7 @@ def pyinstall():
     os.system("pyinstaller allserver.py --onefile")
 
 def install():
-    shutil.rmtree("dist")
+    if os.path.isdir("dist"): shutil.rmtree("dist")
     pyinstall()
     copy_need_file()
     copy_src_file()
