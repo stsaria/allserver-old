@@ -18,7 +18,7 @@ def copy_need_file():
 
 def pyinstall():
     #--hidden-import=minecraft_server
-    subprocess.call("pyinstaller allserver.py --onefile --distpath=bin")
+    subprocess.call("pyinstaller allserver.py --onefile --distpath=bin --uac-admin")
 
 def install():
     if os.path.isdir("bin"): shutil.rmtree("bin")

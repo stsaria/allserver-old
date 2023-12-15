@@ -1,6 +1,8 @@
 import minecraft_server, list_server, client, check, build, etc
 import logging, sys, os
 
+os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+
 def main(args : list):
     lang = etc.load_lang()
     if len(args) >= 2:
