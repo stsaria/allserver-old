@@ -110,7 +110,7 @@ def start_minecraft_server(ip : str, mcid : str, motd = "The minecraft server"):
         if download_file("https://server.properties", f"minecraft/{ip}/server.properties") == False:
             logger.error(f"IP:{ip} Error : Fail server.properties download")
             return 3
-        file_identification_rewriting(f"minecraft/{ip}/server.properties", "motd=", f"motd={motd.replace("\n", "")}\n")
+        file_identification_rewriting(f"minecraft/{ip}/server.properties", "motd=", f"motd="+motd+"\n")
         with open(f"minecraft/{ip}/eula.txt", mode='a', encoding='utf-8') as f:
             f.write("#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).\n#"+dt_now_utc.strftime('%a')+" "+dt_now_utc.strftime('%b')+" "+dt_now_utc.strftime('%d')+" "+dt_now_utc.strftime('%H:%M:%S')+" "+str(dt_now_utc.tzinfo)+" "+dt_now_utc.strftime('%Y')+"\neula=true")
         if not ini['basic']['version'] in stable_versions:
@@ -195,7 +195,7 @@ def register_server(port = 50384):
         message = input(lang["Message"]["MinecraftServer"]["Message"][4]+" :").replace(",", "").replace("\n", "")
         if len(name) >= 10: name = name[:10]
         if len(message) >= 20: message = message[:20]
-        send_data = f"1,{name},{ini["lang"]["lang"].replace(",", "")},{ini["team"]["team_list"].replace(",", "")},{message}"
+        send_data = f"1,{name},"+ini["lang"]["lang"].replace(",", "")+","+ini["team"]["team_list"].replace(",", "")+","+message
         client_socket.connect((ip, port))
         client_socket.sendall(send_data.encode('utf-8'))
         data = client_socket.recv(1024)

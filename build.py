@@ -1,5 +1,4 @@
-import shutil, os
-import subprocess
+import subprocess, platform, shutil, os
 
 make_list = ["lang?dir", "config?dir", "README.md?file", "README.ja.md?file", "figure.drawio.png?file"]
 
@@ -18,11 +17,15 @@ def copy_need_file():
 
 def pyinstall():
     #--hidden-import=minecraft_server
-    subprocess.call("pyinstaller allserver.py --onefile --distpath=bin --uac-admin")
+    subprocess.run("pyinstaller allserver.py --onefile --distpath=bin --uac-admin", shell=True)
 
 def install():
+    user_use_platform = platform.system()
     if os.path.isdir("bin"): shutil.rmtree("bin")
     pyinstall()
     copy_need_file()
     copy_src_file()
-    shutil.make_archive('allserver-win-bin', 'zip', root_dir='./bin')
+    if user_use_platform == "Windows":
+        shutil.make_archive('allserver-win-bin', 'zip', root_dir='./bin')
+    elif user_use_platform == "Linux":
+        shutil.make_archive('allserver-linux-bin', 'gztar', root_dir='./bin')
