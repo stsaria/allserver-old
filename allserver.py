@@ -30,7 +30,10 @@ def main(args : list):
                 logger.info("STOP!!")
                 return 0
         elif "--start-list-server" in args:
-            list_server.start_server()
+            try:
+                list_server.start_server()
+            except KeyboardInterrupt:
+                pass
         elif "--install-auto-run" in args:
             install_auto_run.install()
         elif "--build" in args:

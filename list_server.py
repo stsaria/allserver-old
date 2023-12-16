@@ -165,4 +165,10 @@ def start():
     if check.network(check_host="0.0.0.0", check_port=50384) == 0:
         logger.error(f"Error :Cant start server")
         return 3
-    return start_server()
+    try:
+        if start_server() != 0:
+            print("Error")
+            return 1
+    except KeyboardInterrupt:
+        pass
+    return 0
