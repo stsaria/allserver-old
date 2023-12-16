@@ -1,4 +1,11 @@
 # AllServer
+## 注意
+- このシステムはある程度のサーバー・インターネット知識を理解している上でやるべきです。
+  (サーバーを立てたが、ポート開放にミスがあり、あなたのコンピューターが何かの踏み台(基本的に犯罪)になってしまった、事例を聞いたことがあります)
+- ここで出ている`allserver.py`はバイナリの場合はバイナリの拡張子に変更してください(Linuxの場合は拡張子がありません)
+- このAllServerにはライセンス以外には、何もルールがありません
+  ルールはサーバー各自の取り決めに当たります
+- このプログラムは脆弱性が非常にある可能性があります(もはやあるといってもいいでしょう)
 ## 目次
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -68,11 +75,14 @@ pip install requests
 2. インストール先が正しくパーミッション・所有者が設定されていることを確認してください。<br/>
 Linux : `ls -l`<br/>
 Windows : `dir /q`
-3. <a href="https://github.com/stsaria/allserver/archive/refs/heads/main.zip">ダウンロード</a>からソースコードをダウンロードします。
+3. <a href="https://github.com/stsaria/allserver/releases">ダウンロード</a>からバイナリをダウンロードします
+もし、何らかの問題でバイナリが実行できない場合は
+<a href="https://github.com/stsaria/allserver/archive/refs/heads/main.zip">ダウンロード</a>からソースコードをダウンロードします。
+4. もしZipやGztarなどの場合はファイルを解凍します。
 ```
 git clone https://github.com/stsaria/allserver.git
 ```
-4. allserver.pyを起動します<br/>
+5. allserver.pyを起動します<br/>
 ('--help'引数を使えばヘルプが出ます)
 ```
 python3 allserver.py
