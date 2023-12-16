@@ -75,7 +75,7 @@ pip install requests
 2. インストール先が正しくパーミッション・所有者が設定されていることを確認してください。<br/>
 Linux : `ls -l`<br/>
 Windows : `dir /q`
-3. <a href="https://github.com/stsaria/allserver/releases">ダウンロード</a>からバイナリをダウンロードします
+3. <a href="https://github.com/stsaria/allserver/releases">ダウンロード</a>からバイナリをダウンロードします<br/>
 もし、何らかの問題でバイナリが実行できない場合は、<a href="https://github.com/stsaria/allserver/archive/refs/heads/main.zip">ダウンロード</a>からソースコードをダウンロードします。
 ```
 git clone https://github.com/stsaria/allserver.git
