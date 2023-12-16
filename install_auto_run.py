@@ -9,7 +9,7 @@ def register_auto_run(start_program : str, argv : str):
     if ".py" in start_program:
         start_command = f"python -u {start_program} "+argv
     else:
-        start_command = f"{start_program} "+argv
+        start_command = absolute_path+"/"+os.path.basename(start_program.replace("./", ""))+" "+argv
     if user_use_platform == "Linux":
         if not shutil.which("systemctl"):
             print(lang["Message"]["InstallAutoRun"]["Message"][1])
@@ -18,14 +18,14 @@ def register_auto_run(start_program : str, argv : str):
         try:
             with open("/etc/systemd/system/allserver-"+argv.replace("--", "")+".service", encoding="utf-8", mode="w") as f:
                 f.write(f"""[Unit]
-                Description=Minecraft Server: %i
-                After=network.target
-                [Service]
-                WorkingDirectory={absolute_path}
-                Restart=always
-                ExecStart={start_command}
-                [Install]
-                WantedBy=multi-user.target""")
+Description=AllServer Systemd
+After=network.target
+[Service]
+WorkingDirectory={absolute_path}
+Restart=always
+ExecStart={start_command}
+[Install]
+WantedBy=multi-user.target""")
             subprocess.run("systemctl daemon-reload && systemctl enable allserver-"+argv.replace("--", "")+".service && systemctl start allserver-"+argv.replace("--", "")+".service", shell=True)
             print(f"Systemd name -> allserver-"+argv.replace("--", "")+".service")
         except:
