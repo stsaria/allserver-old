@@ -14,7 +14,7 @@
 				"   --plus-not-team : server search regardless of team",
 				"--start-list-server : start server (list server)",
 				"--start-minecraft-server : start server (standby)(minecraft-server)",
-				"--build : Build Allserver (Need Windows Pyinstaller)\n"
+				"--build : Build Allserver (Need Pyinstaller)\n"
 
 			],
 			"ModeSelectMessage": [
@@ -22,7 +22,8 @@
 				"[1] : Client mode (server creation/search)",
 				"[2] : Minecraft server mode (server support and registration to the list)",
 				"[3] : Listserver mode (Minecraft server list)",
-				"[4] : End"
+				"[4] : Auto run setting mode",
+				"[5] : End"
 			]
 		},
 		"ListServer": {
@@ -91,6 +92,21 @@
 				"Please enter server IP",
 				"Please enter a server name",
 				"Please enter a supplement",
+				"Success.",
+				"Failed."
+			]
+		},
+		"InstallAutoRun": {
+			"AutoRunSystemSelectMessage": [
+				"Select a server to start automatically.",
+				"*If you are using Linux, please make sure that Systemd is installed. \n",
+				"[1] : Minecraft Server",
+				"[2] : Listserver",
+				"[3] : End"
+			],
+			"Message": [
+				"You do not have administrative privileges.",
+				"Systemd is not installed",
 				"Success.",
 				"Failed."
 			]

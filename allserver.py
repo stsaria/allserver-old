@@ -1,7 +1,9 @@
-import minecraft_server, list_server, client, check, build, etc
-import logging, sys, os
+import sys, os
 
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+
+import install_auto_run, minecraft_server, list_server, client, check, build, etc
+import logging
 
 def main(args : list):
     lang = etc.load_lang()
@@ -29,6 +31,8 @@ def main(args : list):
                 return 0
         elif "--start-list-server" in args:
             list_server.start_server()
+        elif "--install-auto-run" in args:
+            install_auto_run.install()
         elif "--build" in args:
             build.install()
         elif "--search" in args[1] and len(args[1].split("/")) == 2:
@@ -42,7 +46,7 @@ def main(args : list):
     else:
         print("\n".join(lang["Message"]["Main"]["ModeSelectMessage"]))
         while True:
-            mode = input("[1,2,3,4] :")
+            mode = input("[1,2,3,4,5] :")
             if mode == "1":
                 client.start()
             elif mode == "2":
@@ -50,6 +54,8 @@ def main(args : list):
             elif mode == "3":
                 list_server.start()
             elif mode == "4":
+                install_auto_run.install()
+            elif mode == "5":
                 break
             else:
                 continue

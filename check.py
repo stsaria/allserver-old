@@ -1,4 +1,4 @@
-import configparser, socket, os
+import configparser, ctypes, socket, os
 
 check_path_list = ["lang", "config", "data", "minecraft", "config/basic.ini", "config/minecraftserver.ini"]
 make_list = ["data?dir", "minecraft?dir"]
@@ -83,3 +83,12 @@ def check():
         print("Error : Fail load lang file")
         return 6
     return 0
+
+def is_admin():
+    try:
+        return os.getuid() == 0
+    except AttributeError:
+        try:
+            return ctypes.windll.shell32.IsUserAnAdmin()
+        except:
+            return False
