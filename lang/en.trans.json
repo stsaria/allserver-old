@@ -76,7 +76,8 @@
 				"*Ctrl+C will not stop the server!",
 				"Use the command '/stop' on the Minecraft server to stop the server",
 				"However, the server will close automatically after one hour",
-				"However, that method can be very annoying and should be avoided as much as possible!"
+				"However, that method can be very annoying and should be avoided as much as possible!",
+				"According to the server, using the '/stop' command may not stop it immediately, but it should wait!"
 			]
 		},
 		"MinecraftServer": {
