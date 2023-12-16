@@ -26,7 +26,7 @@ def register_auto_run(start_program : str, argv : str):
                 ExecStart={start_command}
                 [Install]
                 WantedBy=multi-user.target""")
-            subprocess.run("systemctl deamon-reload && systemctl enable allserver-"+argv.replace("--", "")+".service && systemctl start allserver-"+argv.replace("--", "")+".service", shell=True)
+            subprocess.run("systemctl daemon-reload && systemctl enable allserver-"+argv.replace("--", "")+".service && systemctl start allserver-"+argv.replace("--", "")+".service", shell=True)
             print(f"Systemd name -> allserver-"+argv.replace("--", "")+".service")
         except:
             print(lang["Message"]["InstallAutoRun"]["Message"][3])

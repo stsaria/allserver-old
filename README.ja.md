@@ -6,6 +6,7 @@
 - このAllServerにはライセンス以外には、何もルールがありません
   ルールはサーバー各自の取り決めに当たります
 - このプログラムは脆弱性が非常にある可能性があります(もはやあるといってもいいでしょう)
+- このプログラムは説明に書いていても実際に実装するのを忘れている可能性があります(すいません)
 ## 目次
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
