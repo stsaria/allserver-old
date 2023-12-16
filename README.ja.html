@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.ja.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="allserver">AllServer</h1>
+<h2 id="%E6%B3%A8%E6%84%8F">注意</h2>
+<ul>
+<li>このシステムはある程度のサーバー・インターネット知識を理解している上でやるべきです。
+(サーバーを立てたが、ポート開放にミスがあり、あなたのコンピューターが何かの踏み台(基本的に犯罪)になってしまった、事例を聞いたことがあります)</li>
+<li>ここで出ている<code>allserver.py</code>はバイナリの場合はバイナリの拡張子に変更してください(Linuxの場合は拡張子がありません)</li>
+<li>このAllServerにはライセンス以外には、何もルールがありません
+ルールはサーバー各自の取り決めに当たります</li>
+<li>このプログラムは脆弱性が非常にある可能性があります(もはやあるといってもいいでしょう)</li>
+</ul>
+<h2 id="%E7%9B%AE%E6%AC%A1">目次</h2>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<ul>
+<li><a href="#%E6%A6%82%E8%A6%81">概要</a></li>
+<li><a href="#%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%83%BB%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">メリット・デメリット</a>
+<ul>
+<li><a href="#%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">メリット</a></li>
+<li><a href="#%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">デメリット</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BF%85%E8%A6%81%E7%92%B0%E5%A2%83">必要環境</a></li>
+<li><a href="#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95">インストール方法</a></li>
+<li><a href="#%E5%BC%95%E6%95%B0">引数</a></li>
+<li><a href="#%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">クライアントの使い方</a>
+<ul>
+<li><a href="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E6%A4%9C%E7%B4%A2">サーバーの検索</a></li>
+<li><a href="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E7%AB%8B%E3%81%A6%E6%96%B9">サーバーの立て方</a></li>
+</ul>
+</li>
+<li><a href="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">サーバーの使い方</a>
+<ul>
+<li><a href="#%E3%83%9E%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC">マインクラフトサーバー</a>
+<ul>
+<li><a href="#%E7%89%B9%E5%88%A5%E5%BF%85%E8%A6%81%E8%A6%81%E4%BB%B6">特別必要要件</a></li>
+<li><a href="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E3%83%AA%E3%82%B9%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AB%E7%99%BB%E9%8C%B2">サーバーをリストサーバーに登録</a></li>
+<li><a href="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E8%B5%B7%E5%8B%95">サーバー起動</a></li>
+</ul>
+</li>
+<li><a href="#%E3%83%AA%E3%82%B9%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC">リストサーバー</a>
+<ul>
+<li><a href="#%E7%89%B9%E5%88%A5%E5%BF%85%E8%A6%81%E8%A6%81%E4%BB%B6-1">特別必要要件</a></li>
+<li><a href="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E8%B5%B7%E5%8B%95-1">サーバー起動</a></li>
+</ul>
+</li>
+<li><a href="#%E8%87%AA%E5%8B%95%E8%B5%B7%E5%8B%95%E8%A8%AD%E5%AE%9A">自動起動設定</a>
+<ul>
+<li><a href="#%E7%89%B9%E5%88%A5%E5%BF%85%E8%A6%81%E8%A6%81%E4%BB%B6-2">特別必要要件</a></li>
+<li><a href="#%E8%A8%AD%E5%AE%9A">設定</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#ini%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">iniファイル</a>
+<ul>
+<li><a href="#ini%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E3%81%AF">iniファイルとは</a></li>
+<li><a href="#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7">ファイル一覧</a></li>
+</ul>
+</li>
+<li><a href="#%E8%A8%80%E8%AA%9E%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">言語ファイル</a>
+<ul>
+<li><a href="#%E8%A8%80%E8%AA%9E%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E3%81%AF">言語ファイルとは</a></li>
+<li><a href="#%E4%BD%9C%E6%88%90%E3%83%BB%E8%A8%98%E8%BF%B0%E6%96%B9%E6%B3%95">作成・記述方法</a></li>
+<li><a href="#%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E6%96%B9%E6%B3%95">読み込み方法</a></li>
+</ul>
+</li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<h2 id="%E6%A6%82%E8%A6%81">概要</h2>
+<p>AllServerは、非常に低コスト・低負荷で動くマインクラフトサーバー提供システムです。</p>
+<p>ポート開放ができない人でも無料でサーバーを立てられます</p>
+<p>一つのサーバーに集中して、マインクラフトサーバーを動かすのではなく、たくさんのサーバ提供者にランダムにマインクラフトサーバーを立てるシステムです。</p>
+<p>サーバーは、サーバーの一覧を持っているサーバー と マインクラフトサーバーを立てれるサーバーの二種類に分かれます</p>
+<p>図</p>
+<p><img src="./figure.drawio.png" alt=""></p>
+<h2 id="%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%83%BB%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">メリット・デメリット</h2>
+<h3 id="%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">メリット</h3>
+<ul>
+<li>低負荷であるため、パソコンで作業している間でも裏で支援できる</li>
+<li>一つのサーバー提供者に頼らないため、無料でサーバーを立てれる</li>
+</ul>
+<h3 id="%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88">デメリット</h3>
+<ul>
+<li>支援者によってサーバーの快適差が変わる可能性がある</li>
+<li>支援者よりも利用者が多い場合は立てられない可能性がある</li>
+</ul>
+<h2 id="%E5%BF%85%E8%A6%81%E7%92%B0%E5%A2%83">必要環境</h2>
+<ul>
+<li>OS Linux/Windows</li>
+<li>Java(Minecraftバージョンに合っている)(クライアントモードの場合は必要なし)</li>
+<li>Python3(最新バージョン推奨)(バイナリの場合は必要なし？)
+Requests(ライブラリ)</li>
+</ul>
+<h2 id="%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95">インストール方法</h2>
+<ol>
+<li>pipでライブラリをインストールする。
+もし、pipが入ってない場合はapt(ubuntu)などで入れてください。</li>
+</ol>
+<pre class="hljs"><code><div>pip install requests
+</div></code></pre>
+<ol start="2">
+<li>インストール先が正しくパーミッション・所有者が設定されていることを確認してください。<br/>
+Linux : <code>ls -l</code><br/>
+Windows : <code>dir /q</code></li>
+<li><a href="https://github.com/stsaria/allserver/releases">ダウンロード</a>からバイナリをダウンロードします<br/>
+もし、何らかの問題でバイナリが実行できない場合は、<a href="https://github.com/stsaria/allserver/archive/refs/heads/main.zip">ダウンロード</a>からソースコードをダウンロードします。</li>
+</ol>
+<pre class="hljs"><code><div>git clone https://github.com/stsaria/allserver.git
+</div></code></pre>
+<ol start="4">
+<li>もしZipやGztarなどの場合はファイルを解凍します。</li>
+<li>allserver.pyを起動します<br/>
+('--help'引数を使えばヘルプが出ます)</li>
+</ol>
+<pre class="hljs"><code><div>python3 allserver.py
+
+AllServer
+
+モードを選択してください。
+
+[1] : クライアントモード（サーバー作成・検索）
+[2] : マインクラフトサーバーモード（サーバー支援・ リストに登録）
+[3] : リストサーバーモード（マインクラフトサーバー リスト）
+[4] : 終了
+[1,2,3,4] :
+</div></code></pre>
+<h2 id="%E5%BC%95%E6%95%B0">引数</h2>
+<p>※ 初めての方はこれを飛ばして操作方法を見てください<br/>
+Systemdやスタートアップなどで起動する際に使用できます</p>
+<ul>
+<li>
+<p><code>--help</code> ヘルプを表示 <code>python3 allserver.py --help</code></p>
+</li>
+<li>
+<p><code>--search/serverip</code> サーバーを検索 <code>python3 allserver.py --search</code>
+追加引数</p>
+<ul>
+<li><code>--plus-not-lang</code> 設定言語(国名)以外のサーバーも検索  <code>python3 allserver.py --search/serverip --plus-not-lang</code></li>
+<li><code>--plus-not-team</code> 設定チーム以外のサーバーも検索  <code>python3 allserver.py --search/serverip --plus-not-team</code></li>
+</ul>
+</li>
+<li>
+<p><code>--start-minecraft-server</code>　マインクラフトサーバーを起動（待機）<code>python3 allserver.py --start-minecraft-server</code></p>
+</li>
+<li>
+<p><code>--start-list-server</code> リストサーバーを起動 <code>python3 allserver.py --start-list-server</code></p>
+</li>
+<li>
+<p><code>--build</code> ソースコードをビルド (Pyinstallerが必要) <code>python3 allserver.py --build</code></p>
+</li>
+</ul>
+<h2 id="%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">クライアントの使い方</h2>
+<h3 id="%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E6%A4%9C%E7%B4%A2">サーバーの検索</h3>
+<ol>
+<li>allserver.pyを起動</li>
+<li>クライアントモードを選択</li>
+<li>サーバー検索モードを選択</li>
+<li>リストサーバーIPを入力</li>
+</ol>
+<pre class="hljs"><code><div>python3 -u allserver.py
+AllServer
+
+モードを選択してください。
+
+[1] : クライアントモード（サーバー作成・検索）
+[2] : マインクラフトサーバーモード（サーバー支援・リストに登録）
+[3] : リストサーバーモード（マインクラフトサーバーリスト）
+[4] : 終了
+[1,2,3,4] :1
+
+クライアントモードを選択してください。
+※マインクラフト'JAVA'版がインストールされている場合のみサーバーを作成してください！
+
+[1] : サーバー検索
+[2] : サーバー起動（自動）
+[3] : サーバー起動（手動）
+[4] : 戻る
+[1,2,3,4] :1
+リストサーバーIPを入力してください :サーバーIP
+成功しました
+合計数 : 1
+
+名前:host IP:サーバーIP 言語(国名):ja チーム:everyone/Everyone 追記:message
+</div></code></pre>
+<h3 id="%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E7%AB%8B%E3%81%A6%E6%96%B9">サーバーの立て方</h3>
+<ol>
+<li>allserver.pyを起動</li>
+<li>サーバー起動モードを選択<br/>
+マインクラフトサーバーのサーバーアドレスを知らない場合は、<strong>自動</strong>を選ぶ（※リストサーバーのアドレスを知っている必要があります。）<br/>
+マインクラフトサーバーのアドレスを既に知っている場合は、<strong>手動</strong>を選ぶ</li>
+<li>サーバーIPを入力</li>
+<li>Motdを入力</li>
+<li>OP権限を与えるMCIDを入力('/stop'コマンドを扱えるユーザーにしましょう)</li>
+<li>表示されたマインクラフトサーバーバージョン・IPで接続</li>
+<li>終了する際は、'/stop'コマンドを実行すればサーバーが停止します(1時間立つと自動的にサーバーが停止します)</li>
+</ol>
+<pre class="hljs"><code><div>python3 -u allserver.py
+AllServer
+
+モードを選択してください。
+
+[1] : クライアントモード（サーバー作成・検索）
+[2] : マインクラフトサーバーモード（サーバー支援・リストに登録）
+[3] : リストサーバーモード（マインクラフトサーバーリスト）
+[4] : 終了
+[1,2,3,4] :1
+
+クライアントモードを選択してください。
+※マインクラフト'JAVA'版がインストールされている場合のみサーバーを作成してください！
+
+[1] : サーバー検索
+[2] : サーバー起動（自動）
+[3] : サーバー起動（手動）
+[4] : 戻る
+[1,2,3,4] :2 または 3
+リスト・マインクラフトサーバーIPを入力してください :サーバーIP
+サーバーMotdを入力してください :motd
+あなたのMCIDを入力してください(UUIDではありません)(このMCIDにOP権限を与えます) :mcid
+
+サーバーの起動をお待ちください
+
+※Ctrl+Cでサーバーは止められません！
+サーバーを止める際はマインクラフトサーバー上で'/stop'コマンドを使用してください
+ただし、一時間でサーバーは自動的に閉じます
+ですが、その方法は非常に迷惑をかける可能性がありま すので、できるだけ避けてください
+サーバーのポートが開いていることを確認しています .OK
+
+サーバーバージョン : version
+サーバーポート : 25565
+
+ServerIP : サーバーIP
+正常終了しました
+</div></code></pre>
+<h2 id="%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">サーバーの使い方</h2>
+<h3 id="%E3%83%9E%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC">マインクラフトサーバー</h3>
+<h4 id="%E7%89%B9%E5%88%A5%E5%BF%85%E8%A6%81%E8%A6%81%E4%BB%B6">特別必要要件</h4>
+<ul>
+<li>ポート<strong>50385</strong>の開放</li>
+<li>メモリ容量2GB以上(推奨4GB以上)</li>
+</ul>
+<h4 id="%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E3%83%AA%E3%82%B9%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AB%E7%99%BB%E9%8C%B2">サーバーをリストサーバーに登録</h4>
+<ol>
+<li>allserver.pyを起動</li>
+<li>マインクラフトサーバーモードを選択</li>
+<li>サーバー登録モードを選択</li>
+<li>リストサーバーのIPを入力</li>
+<li>サーバー名、補足を入力</li>
+</ol>
+<pre class="hljs"><code><div>python3 -u allserver.py
+AllServer
+
+モードを選択してください。
+
+[1] : クライアントモード（サーバー作成・検索）
+[2] : マインクラフトサーバーモード（サーバー支援・リストに登録）
+[3] : リストサーバーモード（マイクラサーバーリスト）
+[4] : 終了
+[1,2,3,4] :2
+マインクラフトサーバーモードを選択してください。
+
+[1] : サーバー起動
+[2] : サーバー登録(リストサーバー)
+[3] : 戻る
+[1,2,3] :2
+サーバーIPを入力してください :サーバーIP
+サーバー名を入力してください :マインクラフト1
+補足を入力してください :message
+成功しました
+</div></code></pre>
+<h4 id="%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E8%B5%B7%E5%8B%95">サーバー起動</h4>
+<ol>
+<li>allserver.pyを起動</li>
+<li>マインクラフトサーバーモードを選択</li>
+<li>サーバー起動モードを選択</li>
+</ol>
+<pre class="hljs"><code><div>python3 -u allserver.py   
+AllServer
+
+モードを選択してください。
+
+[1] : クライアントモード（サーバー作成・検索）
+[2] : マインクラフトサーバーモード（サーバー支援・リストに登録）
+[3] : リストサーバーモード（マインクラフトサーバーリスト）
+[4] : 終了
+[1,2,3,4] :2
+マインクラフトサーバーモードを選択してください。
+
+[1] : サーバー起動
+[2] : サーバー登録(リストサーバー)
+[3] : 戻る
+[1,2,3] :1
+yyyy-mm-dd hh:mm:ss,fff@ Start Server
+CtrlとCを押せば終了します
+</div></code></pre>
+<p>引数で起動する場合(Systemd・スタートアップ等)は<code>--start-minecraft-server</code>引数をallserver.pyの後につけて起動する</p>
+<pre class="hljs"><code><div>python3 -u allserver.py --start-minecraft-server
+AllServer
+
+yyyy-mm-dd hh:mm:ss,fff@ Start Server
+CtrlとCを押せば終了します
+</div></code></pre>
+<h3 id="%E3%83%AA%E3%82%B9%E3%83%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC">リストサーバー</h3>
+<h4 id="%E7%89%B9%E5%88%A5%E5%BF%85%E8%A6%81%E8%A6%81%E4%BB%B6">特別必要要件</h4>
+<ul>
+<li>ポート<strong>50384</strong>の開放</li>
+</ul>
+<h4 id="%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E8%B5%B7%E5%8B%95">サーバー起動</h4>
+<ol>
+<li>allserver.pyを起動</li>
+<li>リストサーバーモードを選択</li>
+<li>サーバー起動モードを選択<br/>
+※初回起動時には説明が出ます</li>
+</ol>
+<pre class="hljs"><code><div>python3 -u allserver.py
+AllServer
+
+モードを選択してください。
+
+[1] : クライアントモード（サーバー作成・検索）
+[2] : マインクラフトサーバーモード（サーバー支援・リストに登録）
+[3] : リストサーバーモード（マインクラフトサーバーリスト）
+[4] : 終了
+[1,2,3,4] :3
+あなたはこのリストサーバーを立てるのは初めてですか？
+注意事項があります。
+・ローカル内以外に公開する場合はTCPポート 50384 をルーターなどで開放してください。
+・logフォルダーのlistserver.logにIP情報を含むログが記録されています。
+もし常識的なアクセス数を超える場合(いわいる、'DOS'というもの)は、IPをブロックするといいでしょう。
+
+作成しますか？
+[1] : 作成する
+[2] : 戻る
+[1,2] :1
+yyyy-mm-dd hh:mm:ss,fff@ Start Server
+CtrlとCを押せば終了します
+</div></code></pre>
+<p>引数で起動する場合(Systemd・スタートアップ等)は<code>--start-list-server</code>引数をallserver.pyの後につけて起動する</p>
+<pre class="hljs"><code><div>python3 -u allserver.py --start-list-server
+AllServer
+
+yyyy-mm-dd hh:mm:ss,fff@ Start Server
+CtrlとCを押せば終了します
+</div></code></pre>
+<h3 id="%E8%87%AA%E5%8B%95%E8%B5%B7%E5%8B%95%E8%A8%AD%E5%AE%9A">自動起動設定</h3>
+<h4 id="%E7%89%B9%E5%88%A5%E5%BF%85%E8%A6%81%E8%A6%81%E4%BB%B6">特別必要要件</h4>
+<ul>
+<li>Linuxの場合はSystemdの導入が必要</li>
+</ul>
+<h4 id="%E8%A8%AD%E5%AE%9A">設定</h4>
+<ol>
+<li>allserver.pyを管理者で起動</li>
+<li>自動起動設定モードを選択</li>
+<li>マインクラフトサーバーかリストサーバーを選択</li>
+</ol>
+<pre class="hljs"><code><div>python -u allserver.py
+AllServer
+
+モードを選択してください。
+
+[1] : クライアントモード（サーバー作成・検索）
+[2] : マインクラフトサーバーモード（サーバー支援・リストに登録）
+[3] : リストサーバーモード（マインクラフトサーバーリスト）
+[4] : 自動起動設定モード
+[5] : 終了
+[1,2,3,4,5] :4
+自動起動するサーバーを選択してください。
+※Linuxをお使いの場合はSystemdが導入されていることを確認してください。
+
+[1] : マインクラフトサーバー
+[2] : リストサーバー
+[3] : 終了
+[1,2,3] :1 または 2
+成功しました
+</div></code></pre>
+<h2 id="ini%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">iniファイル</h2>
+<h3 id="ini%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E3%81%AF">iniファイルとは</h3>
+<p>※iniファイルの概要について説明ではなく、AllServerで使われるiniファイルに関して説明しています。<br/>
+iniファイルは、AllServerの設定ファイルです。<br/>
+書き方は各ファイルに書いてあります。<br/>
+場所は'config'フォルダーの中にあります。</p>
+<h3 id="%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7">ファイル一覧</h3>
+<p>'<a href="/config/basic.ini">basic.ini</a>'ファイルはAllServerの基本的な設定（言語・チーム）について書いてあるiniファイルです。<br/>
+'<a href="/config/minecraftserver.ini">minecraftserver.ini</a>'ファイルはAllServerのマインクラフトサーバーの設定（ポート・バージョン）について書いてあるiniファイルです。</p>
+<h2 id="%E8%A8%80%E8%AA%9E%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">言語ファイル</h2>
+<h3 id="%E8%A8%80%E8%AA%9E%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E3%81%AF">言語ファイルとは</h3>
+<p>言語ファイルは、AllServerを使用するときに表示される、文章が書かれたファイルです。<br/>
+Sariaは日本語で書いていますが、UTF-8(環境依存も含む)で表せるものであれば、すべて書くことができます。<br/></p>
+<h3 id="%E4%BD%9C%E6%88%90%E3%83%BB%E8%A8%98%E8%BF%B0%E6%96%B9%E6%B3%95">作成・記述方法</h3>
+<p>言語ファイルは'lang'フォルダーの中に'言語名.json'のように作成し、記述します。<br/>
+日本語の言語ファイルは、<a href="/lang/ja.json">ja.json</a>を見てください。<br/>
+改行が多くある文章は、配列を使っています。<br/></p>
+<pre class="hljs"><code><div><span class="hljs-string">"ModeSelectMessage"</span>:
+[<span class="hljs-string">"モードを選択してください。\n"</span>,
+<span class="hljs-string">"[1] : クライアントモード（サーバー作成・検索）"</span>,
+<span class="hljs-string">"[2] : マインクラフトサーバーモード（サーバー支援・リストに登録）"</span>,
+<span class="hljs-string">"[3] : リストサーバーモード（マインクラフトサーバーリスト）"</span>,
+<span class="hljs-string">"[4] : 終了"</span>
+]
+</div></code></pre>
+<p>もちろん配列でない書き方(複数行文字列 など)もできますが、それらはすべて<strong>Json標準</strong>のルールに反しているため使用しません。<br/>
+ただ、このように書くのは将来的には廃止したいです。</p>
+<h3 id="%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E6%96%B9%E6%B3%95">読み込み方法</h3>
+<p>言語ファイルを読み込むには'config'ファイルの中にある'<a href="/config/basic.ini">basic.ini</a>'の'lang'/'lang'キーに、言語ファイルの拡張子を除く名前を入力します。<br/></p>
+<pre class="hljs"><code><div><span class="hljs-section">[lang]</span>
+<span class="hljs-attr">lang</span> = ja
+<span class="hljs-attr">spare_lang</span> = us
+</div></code></pre>
+
+</body>
+</html>
