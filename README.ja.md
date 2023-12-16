@@ -77,10 +77,10 @@ Linux : `ls -l`<br/>
 Windows : `dir /q`
 3. <a href="https://github.com/stsaria/allserver/releases">ダウンロード</a>からバイナリをダウンロードします
 もし、何らかの問題でバイナリが実行できない場合は、<a href="https://github.com/stsaria/allserver/archive/refs/heads/main.zip">ダウンロード</a>からソースコードをダウンロードします。
-4. もしZipやGztarなどの場合はファイルを解凍します。
 ```
 git clone https://github.com/stsaria/allserver.git
 ```
+4. もしZipやGztarなどの場合はファイルを解凍します。
 5. allserver.pyを起動します<br/>
 ('--help'引数を使えばヘルプが出ます)
 ```
