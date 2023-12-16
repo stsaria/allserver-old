@@ -16,7 +16,7 @@ def register_auto_run(start_program : str, argv : str):
             print(lang["Message"]["InstallAutoRun"]["Message"][3])
             return 1
         try:
-            with open(f"/etc/systemd/system/allserver-{argv.replace("--", "")}.service", encoding="utf-8", mode="w") as f:
+            with open("/etc/systemd/system/allserver-"+argv.replace("--", "")+".service", encoding="utf-8", mode="w") as f:
                 f.write(f"""[Unit]
                 Description=Minecraft Server: %i
                 After=network.target
@@ -26,14 +26,14 @@ def register_auto_run(start_program : str, argv : str):
                 ExecStart={start_command}
                 [Install]
                 WantedBy=multi-user.target""")
-            subprocess.call(f"systemctl deamon-reload && systemctl enable allserver-{argv.replace("--", "")}.service && systemctl start allserver-{argv.replace("--", "")}.service")
-            print(f"Systemd name -> allserver-{argv.replace("--", "")}.service")
+            subprocess.call("systemctl deamon-reload && systemctl enable allserver-"+argv.replace("--", "")+".service && systemctl start allserver-{argv.replace("--", "")}.service")
+            print(f"Systemd name -> allserver-"+argv.replace("--", "")+".service")
         except:
             print(lang["Message"]["InstallAutoRun"]["Message"][3])
             return 2
     elif user_use_platform == "Windows":
         try:
-            file = open(f"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/StartUp/allserver-{argv.replace("--", "")}.bat", mode='w')
+            file = open(f"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/StartUp/allserver-"+argv.replace("--", "")+".bat", mode='w')
             file.write(f"""cd {absolute_path}
 {start_command}
 pause""")
