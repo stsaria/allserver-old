@@ -69,7 +69,8 @@
 				"I'm making sure the server port is open.",
 				"The connected server is connected to other clients.",
 				"Enter your MCID (not UUID) (give OP privileges to this MCID)",
-				"Abnormal termination."
+				"Abnormal termination.",
+				"The IP (global) you enter will match your IP (global).\nIf you want to connect to the server IP you entered, we suggest you connect using your local IP.\nYou can also join from the Internet if the port is open.\nWe only warn you about problems you may encounter when connecting to the server\nAfter you enter here, you will not get this message."
 			],
 			"StartServerMessage": [
 				"Please wait for the server to start up.",

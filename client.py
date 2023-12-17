@@ -1,4 +1,4 @@
-import configparser, pickle, random, socket, check, time, etc
+import configparser, requests, pickle, random, socket, check, time, etc
 import traceback
 
 def is_socket_closed(sock):
@@ -7,6 +7,13 @@ def is_socket_closed(sock):
         return False
     except socket.error:
         return True
+
+def get_ip():
+    try:
+        res = requests.get('http://api.ipify.org/')
+        return str(res.text)
+    except:
+        return ""
 
 def search_servers(host, port = 50384, mode = "00", isprint = True, select_lang = ""):
     ini = configparser.ConfigParser()
@@ -75,11 +82,17 @@ def start_server(port = 50385, mode = 0):
         elif len(servers) < 1:
             print(lang["Message"]["Client"]["Message"][1])
             return 2
+        elif ip == get_ip():
+            print(lang["Message"]["Client"]["Message"][1])
+            return 3
         else:
             ip = servers[random.randint(0,len(servers)-1)][1]
     elif mode == 1:
         print(lang["Message"]["Client"]["WordMessage"][5], end = "")
         ip = input_ip()
+        if ip == get_ip():
+            print(lang["Message"]["Client"]["Message"][10]+"\n\n"+lang["Message"]["Client"]["WordMessage"][5], end = "")
+            ip = input_ip()
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     while True:
         try:
@@ -87,7 +100,6 @@ def start_server(port = 50385, mode = 0):
             motd = input(lang["Message"]["Client"]["Message"][3]+" :").replace("\n", "").replace(",", "")
             mcid = input(lang["Message"]["Client"]["Message"][8]+" :").replace("\n", "").replace(",", "")
             client_socket.sendall(f"{motd},{mcid}".encode('utf-8'))
-
             data = client_socket.recv(1024)
             if not data:
                 return 1
