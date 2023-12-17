@@ -1,6 +1,6 @@
 import subprocess, platform, shutil, os
 
-make_list = ["lang?dir", "config?dir", "README.md?file", "README.ja.md?file", "README.ja.html?file", "figure.drawio.png?file"]
+make_list = ["lang?dir", "config?dir", "README.md?file", "README.html?file", "README.ja.md?file", "README.ja.html?file", "figure.drawio.png?file"]
 
 def copy_need_file():
     for i in make_list: 
