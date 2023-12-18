@@ -388,8 +388,8 @@ code {
 </ul>
 </li>
 <li><a href="#%E5%BF%85%E8%A6%81%E7%92%B0%E5%A2%83">必要環境</a></li>
-<li><a href="#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95">インストール方法</a></li>
 <li><a href="#%E5%BC%95%E6%95%B0">引数</a></li>
+<li><a href="#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95">インストール方法</a></li>
 <li><a href="#%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">クライアントの使い方</a>
 <ul>
 <li><a href="#%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E6%A4%9C%E7%B4%A2">サーバーの検索</a></li>
@@ -459,12 +459,37 @@ code {
 <li>Python3(最新バージョン推奨)(バイナリの場合は必要なし？)
 Requests(ライブラリ)</li>
 </ul>
+<h2 id="%E5%BC%95%E6%95%B0">引数</h2>
+<p>※ 初めての方はこれを飛ばして操作方法を見てください<br/>
+Systemdやスタートアップなどで起動する際に使用できます</p>
+<ul>
+<li>
+<p><code>--help</code> ヘルプを表示 <code>python3 allserver.py --help</code></p>
+</li>
+<li>
+<p><code>--search/serverip</code> サーバーを検索 <code>python3 allserver.py --search</code>
+追加引数</p>
+<ul>
+<li><code>--plus-not-lang</code> 設定言語(国名)以外のサーバーも検索  <code>python3 allserver.py --search/serverip --plus-not-lang</code></li>
+<li><code>--plus-not-team</code> 設定チーム以外のサーバーも検索  <code>python3 allserver.py --search/serverip --plus-not-team</code></li>
+</ul>
+</li>
+<li>
+<p><code>--start-minecraft-server</code>　マインクラフトサーバーを起動（待機）<code>python3 allserver.py --start-minecraft-server</code></p>
+</li>
+<li>
+<p><code>--start-list-server</code> リストサーバーを起動 <code>python3 allserver.py --start-list-server</code></p>
+</li>
+<li>
+<p><code>--build</code> ソースコードをビルド (Pyinstallerが必要・バイナリの場合は不可) <code>python3 allserver.py --build</code></p>
+</li>
+</ul>
 <h2 id="%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95">インストール方法</h2>
 <ol>
 <li>pipでライブラリをインストールする。
-もし、pipが入ってない場合はapt(ubuntu)などで入れてください。</li>
+もし、pipが入ってない場合はパッケージ管理システムなどで入れてください。</li>
 </ol>
-<pre class="hljs"><code><div>pip install requests
+<pre class="hljs"><code><div>pip install -r requirements.txt
 </div></code></pre>
 <ol start="2">
 <li>インストール先が正しくパーミッション・所有者が設定されていることを確認してください。<br/>
@@ -492,31 +517,6 @@ AllServer
 [4] : 終了
 [1,2,3,4] :
 </div></code></pre>
-<h2 id="%E5%BC%95%E6%95%B0">引数</h2>
-<p>※ 初めての方はこれを飛ばして操作方法を見てください<br/>
-Systemdやスタートアップなどで起動する際に使用できます</p>
-<ul>
-<li>
-<p><code>--help</code> ヘルプを表示 <code>python3 allserver.py --help</code></p>
-</li>
-<li>
-<p><code>--search/serverip</code> サーバーを検索 <code>python3 allserver.py --search</code>
-追加引数</p>
-<ul>
-<li><code>--plus-not-lang</code> 設定言語(国名)以外のサーバーも検索  <code>python3 allserver.py --search/serverip --plus-not-lang</code></li>
-<li><code>--plus-not-team</code> 設定チーム以外のサーバーも検索  <code>python3 allserver.py --search/serverip --plus-not-team</code></li>
-</ul>
-</li>
-<li>
-<p><code>--start-minecraft-server</code>　マインクラフトサーバーを起動（待機）<code>python3 allserver.py --start-minecraft-server</code></p>
-</li>
-<li>
-<p><code>--start-list-server</code> リストサーバーを起動 <code>python3 allserver.py --start-list-server</code></p>
-</li>
-<li>
-<p><code>--build</code> ソースコードをビルド (Pyinstallerが必要) <code>python3 allserver.py --build</code></p>
-</li>
-</ul>
 <h2 id="%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">クライアントの使い方</h2>
 <h3 id="%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E6%A4%9C%E7%B4%A2">サーバーの検索</h3>
 <ol>
