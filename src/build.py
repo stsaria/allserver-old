@@ -1,22 +1,26 @@
 import subprocess, platform, shutil, os
 
+user_use_platform = platform.system()
+os_name = ""
+
+if user_use_platform == "Windows":
+    os_name = "win"
+elif user_use_platform == "Linux":
+    os_name = "linux"
+
 make_list = ["lang?dir", "config?dir", "README.md?file", "README.html?file", "README.ja.md?file", "README.ja.html?file", "figure.drawio.png?file"]
 
 def copy_need_file():
     for i in make_list: 
         if "?dir" in i:
-            shutil.copytree(i.split("?")[0], "bin/win/"+i.split("?")[0])
+            shutil.copytree(i.split("?")[0], f"bin/{user_use_platform}/"+i.split("?")[0])
         elif "?file" in i:
-            shutil.copy(i.split("?")[0], "bin/win/"+i.split("?")[0])
+            shutil.copy(i.split("?")[0], f"bin/{user_use_platform}/"+i.split("?")[0])
 
 def pyinstall():
     user_use_platform = platform.system()
     os.makedirs("bin", exist_ok=True)
-    if user_use_platform == "Windows":
-        subprocess.run("pyinstaller src/allserver.py --onefile --distpath=bin/win --uac-admin", shell=True)
-    elif user_use_platform == "Linux":
-        subprocess.run("pyinstaller src/allserver.py --onefile --distpath=bin/linux", shell=True)
-
+    subprocess.run(f"pyinstaller src/allserver.py --onefile --distpath=bin/{user_use_platform} --uac-admin", shell=True)
 def install():
     user_use_platform = platform.system()
     if os.path.isdir("bin"): shutil.rmtree("bin")
@@ -25,4 +29,4 @@ def install():
     if user_use_platform == "Windows":
         shutil.make_archive('allserver-win-bin', 'zip', root_dir='./bin/win')
     elif user_use_platform == "Linux":
-        shutil.make_archive('allserver-linux-bin', 'gztar', root_dir='./bin/win')
+        shutil.make_archive('allserver-linux-bin', 'gztar', root_dir='./bin/linux')
