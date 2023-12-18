@@ -13,14 +13,14 @@ make_list = ["lang?dir", "config?dir", "README.md?file", "README.html?file", "RE
 def copy_need_file():
     for i in make_list: 
         if "?dir" in i:
-            shutil.copytree(i.split("?")[0], f"bin/{user_use_platform}/"+i.split("?")[0])
+            shutil.copytree(i.split("?")[0], f"bin/{os_name}/"+i.split("?")[0])
         elif "?file" in i:
-            shutil.copy(i.split("?")[0], f"bin/{user_use_platform}/"+i.split("?")[0])
+            shutil.copy(i.split("?")[0], f"bin/{os_name}/"+i.split("?")[0])
 
 def pyinstall():
     user_use_platform = platform.system()
     os.makedirs("bin", exist_ok=True)
-    subprocess.run(f"pyinstaller src/allserver.py --onefile --distpath=bin/{user_use_platform} --uac-admin", shell=True)
+    subprocess.run(f"pyinstaller src/allserver.py --onefile --distpath=bin/{os_name} --uac-admin", shell=True)
 def install():
     user_use_platform = platform.system()
     if os.path.isdir("bin"): shutil.rmtree("bin")
