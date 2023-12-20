@@ -7,7 +7,10 @@ def register_auto_run(start_program : str, argv : str):
     user_use_platform = platform.system()
     absolute_path = os.getcwd().replace("\\", "/")
     if ".py" in start_program:
-        start_command = f"python -u {start_program} "+argv
+        if shutil.which("python3"):
+            start_command = f"python3 -u {start_program} "+argv
+        else:
+            start_command = f"python -u {start_program} "+argv
     else:
         start_command = absolute_path+"/"+os.path.basename(start_program.replace("./", ""))+" "+argv
     if user_use_platform == "Linux":
