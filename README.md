@@ -1,4 +1,7 @@
 # AllServer
+**このプログラムは古いものです。**
+
+**現在は[allserver-server](https://github.com/stsaria/allserver-server)(CUIサーバー)と[allserver](https://github.com/stsaria/allserver)(GUIクライアント)に分かれています。**
 ## 注意
 - このシステムはある程度のサーバー・インターネット知識を理解している上でやるべきです。
   (例えば:サーバーを立てたが、ポート開放にミスがあり、あなたのコンピューターが何かの踏み台(基本的に犯罪)になってしまった、事例を聞いたことがあります)
