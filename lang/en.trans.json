@@ -9,7 +9,6 @@
 			"HelpMessage": [
 				"Frequently used help",
 				"If no arguments are entered, the selection mode selection screen is displayed.",
-				"--search/@listserverip@ : Server search",
 				"   --plus-not-lang : server search regardless of language (country)",
 				"   --plus-not-team : server search regardless of team",
 				"--start-list-server : start server (list server)",
@@ -19,11 +18,10 @@
 			],
 			"ModeSelectMessage": [
 				"Select the mode. \n",
-				"[1] : Client mode (server creation/search)",
-				"[2] : Minecraft server mode (server support and registration to the list)",
-				"[3] : Listserver mode (Minecraft server list)",
-				"[4] : Auto run setting mode",
-				"[5] : End"
+				"[1] : Minecraft server mode (server support and registration to the list)",
+				"[2] : Listserver mode (Minecraft server list)",
+				"[3] : Auto run setting mode",
+				"[4] : End"
 			]
 		},
 		"ListServer": {
@@ -39,46 +37,6 @@
 			],
 			"Message": [
 				"Press Ctrl and C to exit"
-			]
-		},
-		"Client": {
-			"WordMessage": [
-				"total number",
-				"Name",
-				"Language(Country)",
-				"team",
-				"PS",
-				"",
-				""
-			],
-			"ModeSelectMessage": [
-				"Select the client mode.",
-				"*Create a server only if you have the 'JAVA' version of Minecraft installed! \n",
-				"[1] : Server Search",
-				"[2] : Server startup (automatic)",
-				"[3] : Server startup (manual)",
-				"[4] : Back"
-			],
-			"Message": [
-				"Success.",
-				"Failed.",
-				"Please enter server IP",
-				"Please enter the server Motd.",
-				"Server version : @version@\nServer port : @port@",
-				"Normal termination",
-				"I'm making sure the server port is open.",
-				"The connected server is connected to other clients.",
-				"Enter your MCID (not UUID) (give OP privileges to this MCID)",
-				"Abnormal termination.",
-				"The IP (global) you enter will match your IP (global).\nIf you want to connect to the server IP you entered, we suggest you connect using your local IP.\nYou can also join from the Internet if the port is open.\nWe only warn you about problems you may encounter when connecting to the server\nAfter you enter here, you will not get this message."
-			],
-			"StartServerMessage": [
-				"Please wait for the server to start up.",
-				"*Ctrl+C will not stop the server!",
-				"Use the command '/stop' on the Minecraft server to stop the server",
-				"However, the server will close automatically after one hour",
-				"However, that method can be very annoying and should be avoided as much as possible!",
-				"According to the server, using the '/stop' command may not stop it immediately, but it should wait!"
 			]
 		},
 		"MinecraftServer": {

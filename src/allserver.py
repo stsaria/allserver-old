@@ -7,7 +7,7 @@ elif not "src" in os.path.abspath(os.path.dirname(os.path.abspath(sys.argv[0])))
 else:
     os.chdir(os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])), '..')))
 
-import install_auto_run, minecraft_server, list_server, client, check, build, etc
+import install_auto_run, minecraft_server, list_server, check, build, etc
 import logging
 
 def main(args : list):
@@ -43,27 +43,17 @@ def main(args : list):
             install_auto_run.install()
         elif "--build" in args:
             build.install()
-        elif "--search" in args[1] and len(args[1].split("/")) == 2:
-            mode_list = ["0", "0"]
-            if "--plus-not-lang" in args:
-                mode_list[0] = "1"
-            if "--not-plus-team" in args:
-                mode_list[1] = "1"
-            mode = "".join(mode_list)
-            client.search_servers(args[1].split("/")[1], mode = mode)
     else:
         print("\n".join(lang["Message"]["Main"]["ModeSelectMessage"]))
         while True:
-            mode = input("[1,2,3,4,5] :")
+            mode = input("[1,2,3,4] :")
             if mode == "1":
-                client.start()
-            elif mode == "2":
                 minecraft_server.start()
-            elif mode == "3":
+            elif mode == "2":
                 list_server.start()
-            elif mode == "4":
+            elif mode == "3":
                 install_auto_run.install()
-            elif mode == "5":
+            elif mode == "4":
                 break
             else:
                 continue
